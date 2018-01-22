@@ -1,0 +1,2 @@
+class MasterRegionMapping < ApplicationRecord
+end

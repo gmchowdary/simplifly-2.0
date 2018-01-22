@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simplifly</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  </head>
+
+  <body>
+    <%= render "layouts/top_nav" %>
+    <div class="content-body">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </div>
+    <%= render "layouts/bottom_footer" %>
+  </body>
+</html>

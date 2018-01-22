@@ -1,0 +1,2 @@
+class MasterRegion < ApplicationRecord
+end

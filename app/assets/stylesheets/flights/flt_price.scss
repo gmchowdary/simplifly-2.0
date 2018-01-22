@@ -1,0 +1,39 @@
+// Place all the styles related to the flights/flt_price controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+//// Search Description
+//common styles
+.search-description-from-data{color:#545454;float:left;text-align:right;width:115px;}
+.search-description-from-to-more-info{color:#545454;float:left;text-align:center;width:100px;}
+.search-description-to-data{color:#545454;float:left;text-align:left;width:115px;}
+
+//styles for ow
+.search-description-body-ow{position:static;font-size:14px;padding:5px;width:100%;height:auto;background-color:white;margin-bottom:15px;float:left;box-shadow: 5px 5px 5px #888888;border:10px solid lightblue;}
+.search-description-more-details{display:none;width:100%;height:auto;float:left;margin-bottom:2px;border-top:1px solid #D3D3D3;}
+.search-description-more-details-btn{text-align:center;float:right;cursor:pointer;margin-right:35px;margin-top:10px;font-size:13px;color:#428bca;text-decoration:underline;text-align:center;}
+.search-description-violations-ow,.search-description-farebreakup-ow,.search-description-refundpolicy-ow{color:#666666;font-size:11px;padding:5px 10px;margin-right:2px;width:271px;min-height:200px;float:left;color:gray;border-right:1px solid lightgray;}
+.search-description-violations-ow,.search-description-refundpolicy-ow{font-size:15px;}
+.search-description-more-violation-btn{width:90px;height:60px;float:left;cursor:pointer;margin-top:5px;color:red;text-align:center;}//animation: blinker 1s linear infinite;}
+//@keyframes blinker {50% { opacity: 0; }}
+.search-description-refundpolicy-ow a{color:gray;}
+.search-description-violations-ow{border-right:1px solid lightgray;}
+.search-description-violations-btn-ow{font-size:15px;color:red;}
+.search-description-farepolicy-ow{width:300px;height:90px;float:left;}
+.search-description-flight-ow{width:100px;height:90px;margin-right:2px;float:left;margin-top:10px;padding-left:30px;}
+.search-description-total-price-ow{width:129px;height:90px;margin-top:10px;float:left;padding-top:5px;}
+.search-description-extra-info-ow{width:199px;height:90px;margin-right:2px;float:left;padding:5px 0px 0px 10px;}
+.search-description-journey-ow{float:left;}
+.search-description-submit-ow{width:140px;height:auto;float:right;}
+
+
+
+//styles for rt
+.search-description-body-rt{position:static;font-size:14px;padding:5px;width:100%;height:auto;background-color:white;margin-bottom:15px;float:left;box-shadow: 5px 5px 5px #888888;border:10px solid lightblue;}
+.search-description-fligh-info-rt{width:100%;height:110px;border:1px solid #D3D3D3;}
+.search-description-flight-rt{font-size:13px;width:70px;height:110px;margin-top:12px;padding-left:10px;float:left;text-align:left;}
+.search-description-price-rt-f{float:left;width:401px;height:110px;border-right:1px solid #D3D3D3;}
+.search-description-price-rt-b{float:left;width:401px;height:110px;border-right:1px solid #D3D3D3;}
+.search-description-select-msg-rt{text-align:center;color:gray;padding-top:30px}
+.search-description-submit-rt{text-align:center;font-size:15px;float:right;width:140px;padding:25px 0px 0px 0px;}
+.search-description-more-data-rt{width:100%;height:200px;background:yellow;}
+.search-description-submit-btn{display:none;}

@@ -1,0 +1,168 @@
+<% 
+  fare = extract_charges_from_fare_obj(@fare)
+  total_fare = get_total(fare)
+  stops = 0
+%>
+
+<% flt_num,dept_datetime,arr_datetime,origin,dest,stops,via,aircraft,dept_term,arr_term,dur,bag_alw = [],[],[],[],[],-1,[],[],[],[],[],[]
+    @segment.each{ |seg|
+      flt_num << seg.flt_num
+      dept_datetime << seg.dept_datetime
+      arr_datetime << seg.arr_datetime
+      origin << seg.origin
+      dest << seg.dest
+      stops += 1
+      via << seg.via
+      aircraft << seg.aircraft
+      dept_term << seg.dept_term
+      arr_term << seg.arr_term
+      dur << seg.dur
+      bag_alw << seg.bag_alw
+    }
+    flt_num = flt_num.join("/")
+    al_code = get_airline_code(flt_num)
+    aircraft = "Boeing " + (aircraft.join(" / Boeing "))
+    dept_airport_name = get_airport_name origin[0]
+    arr_airport_name = get_airport_name dest[-1]
+    stops = get_stops_str stops
+    duration = duration_cal( dept_datetime[0] , arr_datetime[-1] )
+    dept_time = get_time_from_date_obj(dept_datetime[0])
+    arr_time = get_time_from_date_obj(arr_datetime[-1])
+%>
+
+<div class="search-description-body-ow">
+    <div class="search-description-submit-ow">
+      <div class="close-dev-button" onclick="close_box('search-description-body-ow');">
+         <h6><span>close</span>&nbsp;<i class="fa fa-window-close-o" aria-hidden="true"></i></h6>
+      </div>
+      <%= form_for :complete_booking, url: flights_flt_ssr_add_services_path(),method: :get do |f| %>
+        <div class="display-none">
+          <%= f.check_box "ow" %>
+        </div>
+        <center><%= f.submit "Book Now", class:"btn btn-success btn-sm" %></center>
+      <% end %>
+      <div class="search-description-more-details-btn" onclick="show_more_details('search-description-more-details')">
+        <div>More details</div>
+      </div>
+    </div>
+    <div>
+      <div class="search-description-flight-ow">
+        <div>
+          <span>
+            <%=  image_tag(al_code+".jpg", class: "search-flight-info-part-flight-img") %>
+          </span>								
+        </div>
+        <div>
+          <span><%= get_airline_name(al_code) %></span>
+        </div>
+        <div>
+          <small><%= flt_num %></small>
+        </div>
+      </div>
+      <div class="search-description-journey-ow">
+        <div>
+          <center>
+             <div class="search-description-from-data">
+              <div>
+                <span><small><%= date_fomatter_d_m_dt_y dept_datetime[0] %></small></span>
+              </div>
+              <div>
+                <span><b><%= get_time_from_date_obj dept_datetime[0] %> </b></span>
+                <span><b><%= origin[0] %></b></span>
+              </div>
+              <div>
+                <span><small><%= dept_airport_name %></small>, Terminal-<%=  dept_term[0] %></span>
+              </div>
+            </div>
+
+            <div class="search-description-from-to-more-info">
+              <center>
+              <div>
+                <span><%= stops == 0 ? "Non-Stop" : pluralize(stops, 'Stop') %></span>
+              </div>
+                <div>
+                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <span><small><%= duration %></small></span>
+                </div>
+              </center>
+            </div>
+
+            <div class="search-description-to-data">
+              <div>
+                <span><small><%=  date_fomatter_d_m_dt_y arr_datetime[-1] %></small></span>
+              </div>
+              <div>
+                  <span><b><%= dest[-1] %></b></span>
+                <span><b><%= get_time_from_date_obj arr_datetime[-1] %></b></span>
+              </div>
+              <div>
+                <span><small><%= arr_airport_name %></small>, Terminal-<%=  arr_term[-1] %></span>
+              </div>
+            </div>
+          </center>
+        </div>
+      </div>
+      <div class="search-description-extra-info-ow">
+        <i class="fa fa-suitcase" aria-hidden="true"></i> <small>Check-in: 15 KG + Cabin: 7 KG</small><br>
+        &#xF0F5; <small> Meals included.</small>
+      </div>
+      <div class="search-description-total-price-ow">
+        <center>
+          <h5 class="totalAmount"><i class='fa fa-inr' aria-hidden='true'></i> <%= fare_comma_seperator(total_fare) %></h5> 
+          <div><b class="<%= get_btn_color_class_based(get_fare_class(@fare.fare_cls)) %>" style="padding:3px 4px;border-radius:4px;"><%= get_fare_class(@fare.fare_cls) %></b></div>
+        </center>
+      </div>
+      <div class="search-description-more-violation-btn" onclick="show_more_details('search-description-more-details')">
+        <div><h1><i class="fa fa-minus-circle" aria-hidden="true"></h1></i></div>
+        <span>Deviation</span>
+      </div>
+    </div>
+    <div class="search-description-more-details">
+      <div>
+        <div class="search-description-farebreakup-ow">
+          <h6><b>Fare Breakup.</b></h6>
+          <table style="margin-left:30px;">          
+            <tbody>
+              <% fare.each{|key,value| %>
+                <%  if value > 0 %>
+                  <tr>
+                    <td><%=  key %></td>
+                    <td style="text-align:right;"><b><i class='fa fa-inr' aria-hidden='true'></i> <%= fare_comma_seperator(value) %></b></td>
+                  </tr>
+                <% end %>
+              <%  } %>
+              <tr colspan="2">
+                <td><hr style="margin:2px;"></td>
+              </tr>
+              <tr>
+                <td><b>Total<b></b></b></td>
+                <td style="text-align:right;"><b><i class='fa fa-inr' aria-hidden='true'></i> <%= fare_comma_seperator( total_fare ) %></b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="search-description-refundpolicy-ow">
+          <h6><b>Refund Policy.</b></h6>
+          <% if ["Sale"].include? get_fare_class(@fare.fare_cls) %>
+            Non Refundable
+          <% else %>
+            <% get_cancellation_policy(al_code).each{ |policies| %>
+              <%= policies.html_safe %>
+            <% } %>              
+          <% end %>
+        </div>
+        <div class="search-description-violations-ow">
+            <div><b>Travel Policy Deviations.</b></div>
+            <div>
+              <%  get_deviation_details(3 , @fare, false, is_preferred_carrier?(al_code)  ).each{ |key,value| %>
+                <span class="search-description-violations-btn-ow"><i class="fa fa-minus-circle" aria-hidden="true"></i></span> <b><%=  value %></b>
+              <%  } %>
+              <span class="search-description-violations-btn-ow"><i class="fa fa-minus-circle" aria-hidden="true"></i></span> <b>Carrier: First Class</b>
+            </div>
+            <br>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,6 @@
+$("#complete_booking_rto").prop("checked",false);
+$("#complete_booking_rtr").prop("checked",false);
+$("#complete_booking_rt").prop("checked",true);
+<% h = @response  %>
+$("#complete_booking_rt").val('<%= h.html_safe %>');
+$('.search-description-submit-btn').show();

@@ -1,0 +1,30 @@
+<div class="search-description-body-rt display-none">
+  <%#Don't write anything outside of this div %>
+  <div class="search-description-fligh-info-rt">
+    <div class="close-dev-button" onclick="close_box('search-description-body-rt');">
+      <h6><span>close</span>&nbsp;<i class="fa fa-window-close-o" aria-hidden="true"></i></h6>
+    </div>
+    <div class="search-description-price-rt-f">
+      <center><h5><div class="search-description-select-msg-rt">Select Onward Flight</div></h5></center>
+    </div>
+    <div>
+      <%= form_for :complete_booking, url: flights_flt_ssr_add_services_path(),method: :get do |f| %>
+        <div class="search-description-submit-rt">
+          <div class="display-none">
+            <%= f.check_box "rto", onchange:"getPriceRT()" %>
+            <%= f.check_box "rtr", onchange:"getPriceRT()" %>
+            <%= f.check_box "rt", onchange:"getPriceRT()" %>
+          </div>
+          <div class="search-description-submit-btn">
+            <%= f.submit "Book Now", class:"btn btn-success" %><br><br>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="search-description-price-rt-b">
+      <center><h5><div class="search-description-select-msg-rt">Select Return Flight</div></h5></center>
+    </div>
+  </div>
+  <div class="search-description-more-data-rt display-none">
+  </div>
+</div>

@@ -1,0 +1,83 @@
+<% @ssr_avail_rs_hash_ow %>
+<style>
+  .a-s-flt-ssr-container{width:80%;height:auto;padding:10px 20px;}
+  .a-s-imgbox{width:140px;height:150px;margin:2px;float:left;border:1px solid #d3d3d3;opacity: 0.7;padding:5px;}
+  .a-s-imgbox:hover{opacity:1;border:1px solid #d3d3d3;}
+  .a-s-imgbox span{font-size:15px;}
+  .a-s-menu{width:100%;height:auto;margin:10px;}
+  .a-s-menubtn{width:33.33%;height:auto;float:left;}
+  .a-s-menubtn div{width:150px;height:auto;padding:3px 10px;background:lightblue;margin:20px;}
+  .a-s-flt-ssr-view{width:100%;height:auto;float:left;}
+  .a-s-img-active{ width:100%;height:100px;}
+</style>
+<center>
+<div class='a-s-flt-ssr-container'>
+  <div class="a-s-menu">
+    <div class="a-s-menubtn a-s-meals-btn"><div onclick="show_hide_div('a-s-meals')">Meals</div></div>
+    <div class="a-s-menubtn a-s-bags-btn"><div onclick="show_hide_div('a-s-bags')">Baggage</div></div>
+    <div class="a-s-menubtn a-s-addon-btn"><div onclick="show_hide_div('a-s-more')">Add On</div></div>
+  </div>
+  <div class="a-s-flt-ssr-view">
+    <div class="a-s-ssr-m a-s-meals">
+        <div class='a-s-imgbox'>
+            <center>
+                <%= image_tag "sandwich.jpeg", class: "a-s-img-active" %>
+                <span>Sandwich</span>
+            </center>
+        </div>
+        <div class='a-s-imgbox'>
+            <center>
+                <%= image_tag "MatarPanirChapati.jpg", class: "a-s-img-active" %>
+                <span>Matar Panir Chapati</span>
+            </center>
+        </div>
+        <div class='a-s-imgbox'>
+            <center>
+                <%= image_tag "burger.jpg", class: "a-s-img-active" %>
+                <span>NonVeg Burger</span>
+            </center>
+        </div>
+        <div class='a-s-imgbox'>
+            <center>
+                <%= image_tag "vegburgercompbo.jpg", class: "a-s-img-active" %>
+                <span>Veg Burger Combo</span>
+            </center>
+        </div>
+    </div>
+    <div class="a-s-ssr-m a-s-bags">
+        <div class='a-s-imgbox'>
+            <center>
+                <%= image_tag "fastpickup.jpg", class: "a-s-img-active" %>
+                <span>Fast Luggage Out</span>
+            </center>
+        </div>
+        <div class='a-s-imgbox'>
+            <center>
+                <%= image_tag "10kg.svg", class: "a-s-img-active" %>
+                <span>Extra 10KG</span>
+            </center>
+        </div>
+        <div class='a-s-imgbox'>
+            <center>
+                <%= image_tag "15kg.svg", class: "a-s-img-active" %>
+                <span>Extra 15KG</span>
+            </center>
+        </div>
+        <div class='a-s-imgbox'>
+            <center>
+                <%= image_tag "20kg.svg", class: "a-s-img-active" %>
+                <span>Extra 20KG</span>
+            </center>
+        </div>
+        <div class='a-s-imgbox'>
+            <center>
+                <%= image_tag "25kg.svg", class: "a-s-img-active" %>
+                <span>Extra 25KG</span>
+            </center>
+        </div>
+    </div>
+    <div class="a-s-ssr-m a-s-more">
+
+    </div>
+</div>
+</center>

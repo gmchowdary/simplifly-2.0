@@ -1,0 +1,1966 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <flights_avail_search_rs>
+      <ap_names>
+         <app>
+            <element>DEL - New Delhi</element>
+            <element>HYD - Hyderabad</element>
+         </app>
+      </ap_names>
+      <call_id>SIM_1234567890</call_id>
+      <onward_sector>
+         <flt>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>4099.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>J:HO</fare_cls>
+                        <fb_code>0~J~~JHBORT~6041~~4~X</fb_code>
+                        <seats>17</seats>
+                        <vdr_sup_prov_login_id>1</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>4299.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>J:XA</fare_cls>
+                        <fb_code>0~J~~JRTSAVER~6011~~5~X</fb_code>
+                        <seats>17</seats>
+                        <vdr_sup_prov_login_id>1</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>4499.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>J:RS</fare_cls>
+                        <fb_code>0~J~~JSAVER~6011~~5~X</fb_code>
+                        <seats>17</seats>
+                        <vdr_sup_prov_login_id>1</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>5984.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>J:HF</fare_cls>
+                        <fb_code>0~J~~JFLEXSME~6011~~4~X</fb_code>
+                        <seats>17</seats>
+                        <vdr_sup_prov_login_id>1</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>737</aircraft>
+                     <arr_datetime>2016-12-20T08:10:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-20T06:00:00.000Z</dept_datetime>
+                     <dept_term>1D</dept_term>
+                     <dest>HYD</dest>
+                     <dur null="true" />
+                     <flt_num>SG 123</flt_num>
+                     <origin>DEL</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>4099.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>J:HO</fare_cls>
+                        <fb_code>0~J~~JHBORT~6041~~4~X</fb_code>
+                        <seats>19</seats>
+                        <vdr_sup_prov_login_id>1</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>4299.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>J:XA</fare_cls>
+                        <fb_code>0~J~~JRTSAVER~6011~~5~X</fb_code>
+                        <seats>19</seats>
+                        <vdr_sup_prov_login_id>1</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>4499.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>J:RS</fare_cls>
+                        <fb_code>0~J~~JSAVER~6011~~5~X</fb_code>
+                        <seats>19</seats>
+                        <vdr_sup_prov_login_id>1</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>5984.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>J:HF</fare_cls>
+                        <fb_code>0~J~~JFLEXSME~6011~~4~X</fb_code>
+                        <seats>19</seats>
+                        <vdr_sup_prov_login_id>1</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>737</aircraft>
+                     <arr_datetime>2016-12-20T21:00:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-20T18:50:00.000Z</dept_datetime>
+                     <dept_term>1D</dept_term>
+                     <dest>HYD</dest>
+                     <dur null="true" />
+                     <flt_num>SG 131</flt_num>
+                     <origin>DEL</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>1280.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>L:S</fare_cls>
+                        <fb_code>0~L~~LSIP~4910~~3~X</fb_code>
+                        <seats>30</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2800.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:N</fare_cls>
+                        <fb_code>0~T~~T0IPRT~3200~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>3201.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>O:R</fare_cls>
+                        <fb_code>0~O~~O0IP~1057~~5~X</fb_code>
+                        <seats>40</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>320</aircraft>
+                     <arr_datetime>2016-12-20T07:15:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-20T05:10:00.000Z</dept_datetime>
+                     <dept_term>1</dept_term>
+                     <dest>HYD</dest>
+                     <dur null="true" />
+                     <flt_num>6E 765</flt_num>
+                     <origin>DEL</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>1280.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>L:S</fare_cls>
+                        <fb_code>0~L~~LSIP~4910~~3~X</fb_code>
+                        <seats>30</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>3201.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>O:R</fare_cls>
+                        <fb_code>0~O~~O0IP~1057~~5~X</fb_code>
+                        <seats>40</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>320</aircraft>
+                     <arr_datetime>2016-12-20T09:10:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-20T07:00:00.000Z</dept_datetime>
+                     <dept_term>1</dept_term>
+                     <dest>HYD</dest>
+                     <dur null="true" />
+                     <flt_num>6E 303</flt_num>
+                     <origin>DEL</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>1280.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>L:S</fare_cls>
+                        <fb_code>0~L~~LSIP~4910~~3~X</fb_code>
+                        <seats>30</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>3201.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>O:R</fare_cls>
+                        <fb_code>0~O~~O0IP~1057~~5~X</fb_code>
+                        <seats>40</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>320</aircraft>
+                     <arr_datetime>2016-12-20T10:10:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-20T08:05:00.000Z</dept_datetime>
+                     <dept_term>1</dept_term>
+                     <dest>HYD</dest>
+                     <dur null="true" />
+                     <flt_num>6E 683</flt_num>
+                     <origin>DEL</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>1280.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>L:S</fare_cls>
+                        <fb_code>0~L~~LSIP~4910~~3~X</fb_code>
+                        <seats>30</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2800.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:N</fare_cls>
+                        <fb_code>0~T~~T0IPRT~3200~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>3201.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>O:R</fare_cls>
+                        <fb_code>0~O~~O0IP~1057~~5~X</fb_code>
+                        <seats>40</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>320</aircraft>
+                     <arr_datetime>2016-12-20T11:10:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-20T09:00:00.000Z</dept_datetime>
+                     <dept_term>1</dept_term>
+                     <dest>HYD</dest>
+                     <dur null="true" />
+                     <flt_num>6E 841</flt_num>
+                     <origin>DEL</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>1280.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>L:S</fare_cls>
+                        <fb_code>0~L~~LSIP~4910~~3~X</fb_code>
+                        <seats>30</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2800.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:N</fare_cls>
+                        <fb_code>0~T~~T0IPRT~3200~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>3201.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>O:R</fare_cls>
+                        <fb_code>0~O~~O0IP~1057~~5~X</fb_code>
+                        <seats>40</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>320</aircraft>
+                     <arr_datetime>2016-12-20T14:40:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-20T12:35:00.000Z</dept_datetime>
+                     <dept_term>1</dept_term>
+                     <dest>HYD</dest>
+                     <dur null="true" />
+                     <flt_num>6E 305</flt_num>
+                     <origin>DEL</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>1280.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>L:S</fare_cls>
+                        <fb_code>0~L~~LSIP~4910~~3~X</fb_code>
+                        <seats>30</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2800.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:N</fare_cls>
+                        <fb_code>0~T~~T0IPRT~3200~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>3201.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>O:R</fare_cls>
+                        <fb_code>0~O~~O0IP~1057~~5~X</fb_code>
+                        <seats>40</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>320</aircraft>
+                     <arr_datetime>2016-12-20T16:10:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-20T14:05:00.000Z</dept_datetime>
+                     <dept_term>1</dept_term>
+                     <dest>HYD</dest>
+                     <dur null="true" />
+                     <flt_num>6E 679</flt_num>
+                     <origin>DEL</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>1280.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>L:S</fare_cls>
+                        <fb_code>0~L~~LSIP~4910~~3~X</fb_code>
+                        <seats>30</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2800.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:N</fare_cls>
+                        <fb_code>0~T~~T0IPRT~3200~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>3201.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>O:R</fare_cls>
+                        <fb_code>0~O~~O0IP~1057~~5~X</fb_code>
+                        <seats>40</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>320</aircraft>
+                     <arr_datetime>2016-12-20T18:20:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-20T16:10:00.000Z</dept_datetime>
+                     <dept_term>1</dept_term>
+                     <dest>HYD</dest>
+                     <dur null="true" />
+                     <flt_num>6E 747</flt_num>
+                     <origin>DEL</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>1280.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>L:S</fare_cls>
+                        <fb_code>0~L~~LSIP~4910~~3~X</fb_code>
+                        <seats>30</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>3201.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>O:R</fare_cls>
+                        <fb_code>0~O~~O0IP~1057~~5~X</fb_code>
+                        <seats>40</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>320</aircraft>
+                     <arr_datetime>2016-12-20T21:10:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-20T18:55:00.000Z</dept_datetime>
+                     <dept_term>1</dept_term>
+                     <dest>HYD</dest>
+                     <dur null="true" />
+                     <flt_num>6E 689</flt_num>
+                     <origin>DEL</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>1280.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>L:S</fare_cls>
+                        <fb_code>0~L~~LSIP~4910~~3~X</fb_code>
+                        <seats>30</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2800.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:N</fare_cls>
+                        <fb_code>0~T~~T0IPRT~3200~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>3201.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>O:R</fare_cls>
+                        <fb_code>0~O~~O0IP~1057~~5~X</fb_code>
+                        <seats>40</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>320</aircraft>
+                     <arr_datetime>2016-12-20T22:35:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-20T20:20:00.000Z</dept_datetime>
+                     <dept_term>1</dept_term>
+                     <dest>HYD</dest>
+                     <dur null="true" />
+                     <flt_num>6E 635</flt_num>
+                     <origin>DEL</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>1280.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>L:S</fare_cls>
+                        <fb_code>0~L~~LSIP~4910~~3~X</fb_code>
+                        <seats>30</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2800.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:N</fare_cls>
+                        <fb_code>0~T~~T0IPRT~3200~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>3201.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>O:R</fare_cls>
+                        <fb_code>0~O~~O0IP~1057~~5~X</fb_code>
+                        <seats>40</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>320</aircraft>
+                     <arr_datetime>2016-12-20T23:50:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-20T21:35:00.000Z</dept_datetime>
+                     <dept_term>1</dept_term>
+                     <dest>HYD</dest>
+                     <dur null="true" />
+                     <flt_num>6E 767</flt_num>
+                     <origin>DEL</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares null="true" />
+               <segs>
+                  <seg>
+                     <element>
+                        <aircraft>320</aircraft>
+                        <arr_datetime>2016-12-20T23:15:00.000Z</arr_datetime>
+                        <arr_term null="true" />
+                        <bag_alw>15K</bag_alw>
+                        <dept_datetime>2016-12-20T21:40:00.000Z</dept_datetime>
+                        <dept_term>1</dept_term>
+                        <dest>AMD</dest>
+                        <dur null="true" />
+                        <flt_num>6E 597</flt_num>
+                        <origin>DEL</origin>
+                        <stops>0</stops>
+                        <via null="true" />
+                     </element>
+                     <element>
+                        <aircraft>320</aircraft>
+                        <arr_datetime>2016-12-21T06:40:00.000Z</arr_datetime>
+                        <arr_term null="true" />
+                        <bag_alw>15K</bag_alw>
+                        <dept_datetime>2016-12-21T05:00:00.000Z</dept_datetime>
+                        <dept_term>1</dept_term>
+                        <dest>HYD</dest>
+                        <dur null="true" />
+                        <flt_num>6E 259</flt_num>
+                        <origin>AMD</origin>
+                        <stops>0</stops>
+                        <via null="true" />
+                     </element>
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares null="true" />
+               <segs>
+                  <seg>
+                     <element>
+                        <aircraft>320</aircraft>
+                        <arr_datetime>2016-12-21T00:10:00.000Z</arr_datetime>
+                        <arr_term>1</arr_term>
+                        <bag_alw>15K</bag_alw>
+                        <dept_datetime>2016-12-20T22:40:00.000Z</dept_datetime>
+                        <dept_term>1D</dept_term>
+                        <dest>AMD</dest>
+                        <dur null="true" />
+                        <flt_num>6E 625</flt_num>
+                        <origin>DEL</origin>
+                        <stops>0</stops>
+                        <via null="true" />
+                     </element>
+                     <element>
+                        <aircraft>320</aircraft>
+                        <arr_datetime>2016-12-21T06:40:00.000Z</arr_datetime>
+                        <arr_term null="true" />
+                        <bag_alw>15K</bag_alw>
+                        <dept_datetime>2016-12-21T05:00:00.000Z</dept_datetime>
+                        <dept_term>1</dept_term>
+                        <dest>HYD</dest>
+                        <dur null="true" />
+                        <flt_num>6E 259</flt_num>
+                        <origin>AMD</origin>
+                        <stops>0</stops>
+                        <via null="true" />
+                     </element>
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares null="true" />
+               <segs>
+                  <seg>
+                     <element>
+                        <aircraft>320</aircraft>
+                        <arr_datetime>2016-12-21T01:10:00.000Z</arr_datetime>
+                        <arr_term null="true" />
+                        <bag_alw>15K</bag_alw>
+                        <dept_datetime>2016-12-20T23:40:00.000Z</dept_datetime>
+                        <dept_term>1</dept_term>
+                        <dest>AMD</dest>
+                        <dur null="true" />
+                        <flt_num>6E 397</flt_num>
+                        <origin>DEL</origin>
+                        <stops>0</stops>
+                        <via null="true" />
+                     </element>
+                     <element>
+                        <aircraft>320</aircraft>
+                        <arr_datetime>2016-12-21T06:40:00.000Z</arr_datetime>
+                        <arr_term null="true" />
+                        <bag_alw>15K</bag_alw>
+                        <dept_datetime>2016-12-21T05:00:00.000Z</dept_datetime>
+                        <dept_term>1</dept_term>
+                        <dest>HYD</dest>
+                        <dur null="true" />
+                        <flt_num>6E 259</flt_num>
+                        <origin>AMD</origin>
+                        <stops>0</stops>
+                        <via null="true" />
+                     </element>
+                  </seg>
+               </segs>
+            </element>
+         </flt>
+      </onward_sector>
+      <remark />
+      <return_sector>
+         <flt>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>4099.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>J:HO</fare_cls>
+                        <fb_code>0~J~~JHBORT~6041~~4~X</fb_code>
+                        <seats>20</seats>
+                        <vdr_sup_prov_login_id>1</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>4299.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>J:XA</fare_cls>
+                        <fb_code>0~J~~JRTSAVER~6011~~5~X</fb_code>
+                        <seats>20</seats>
+                        <vdr_sup_prov_login_id>1</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>4499.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>J:RS</fare_cls>
+                        <fb_code>0~J~~JSAVER~6011~~5~X</fb_code>
+                        <seats>20</seats>
+                        <vdr_sup_prov_login_id>1</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>5984.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>J:HF</fare_cls>
+                        <fb_code>0~J~~JFLEXSME~6011~~4~X</fb_code>
+                        <seats>20</seats>
+                        <vdr_sup_prov_login_id>1</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>737</aircraft>
+                     <arr_datetime>2016-12-26T10:50:00.000Z</arr_datetime>
+                     <arr_term>1C</arr_term>
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-26T08:40:00.000Z</dept_datetime>
+                     <dept_term null="true" />
+                     <dest>DEL</dest>
+                     <dur null="true" />
+                     <flt_num>SG 124</flt_num>
+                     <origin>HYD</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>4099.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>J:HO</fare_cls>
+                        <fb_code>0~J~~JHBORT~6041~~4~X</fb_code>
+                        <seats>20</seats>
+                        <vdr_sup_prov_login_id>1</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>4299.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>J:XA</fare_cls>
+                        <fb_code>0~J~~JRTSAVER~6011~~5~X</fb_code>
+                        <seats>20</seats>
+                        <vdr_sup_prov_login_id>1</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>4499.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>J:RS</fare_cls>
+                        <fb_code>0~J~~JSAVER~6011~~5~X</fb_code>
+                        <seats>20</seats>
+                        <vdr_sup_prov_login_id>1</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>5984.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>J:HF</fare_cls>
+                        <fb_code>0~J~~JFLEXSME~6011~~4~X</fb_code>
+                        <seats>20</seats>
+                        <vdr_sup_prov_login_id>1</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>737</aircraft>
+                     <arr_datetime>2016-12-26T23:40:00.000Z</arr_datetime>
+                     <arr_term>1C</arr_term>
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-26T21:30:00.000Z</dept_datetime>
+                     <dept_term null="true" />
+                     <dest>DEL</dest>
+                     <dur null="true" />
+                     <flt_num>SG 132</flt_num>
+                     <origin>HYD</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>1805.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>L:S</fare_cls>
+                        <fb_code>0~L~~LSIP~4910~~2~X</fb_code>
+                        <seats>30</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2365.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:R</fare_cls>
+                        <fb_code>0~T~~T0IP~4910~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2800.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:N</fare_cls>
+                        <fb_code>0~T~~T0IPRT~3200~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>320</aircraft>
+                     <arr_datetime>2016-12-26T07:25:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-26T05:05:00.000Z</dept_datetime>
+                     <dept_term null="true" />
+                     <dest>DEL</dest>
+                     <dur null="true" />
+                     <flt_num>6E 738</flt_num>
+                     <origin>HYD</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>1805.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>L:S</fare_cls>
+                        <fb_code>0~L~~LSIP~4910~~2~X</fb_code>
+                        <seats>30</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2365.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:R</fare_cls>
+                        <fb_code>0~T~~T0IP~4910~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2800.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:N</fare_cls>
+                        <fb_code>0~T~~T0IPRT~3200~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>320</aircraft>
+                     <arr_datetime>2016-12-26T08:15:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-26T06:00:00.000Z</dept_datetime>
+                     <dept_term null="true" />
+                     <dest>DEL</dest>
+                     <dur null="true" />
+                     <flt_num>6E 308</flt_num>
+                     <origin>HYD</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>1805.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>L:S</fare_cls>
+                        <fb_code>0~L~~LSIP~4910~~2~X</fb_code>
+                        <seats>30</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2365.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:R</fare_cls>
+                        <fb_code>0~T~~T0IP~4910~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>320</aircraft>
+                     <arr_datetime>2016-12-26T10:00:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-26T07:45:00.000Z</dept_datetime>
+                     <dept_term null="true" />
+                     <dest>DEL</dest>
+                     <dur null="true" />
+                     <flt_num>6E 846</flt_num>
+                     <origin>HYD</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>1805.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>L:S</fare_cls>
+                        <fb_code>0~L~~LSIP~4910~~2~X</fb_code>
+                        <seats>30</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2365.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:R</fare_cls>
+                        <fb_code>0~T~~T0IP~4910~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2800.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:N</fare_cls>
+                        <fb_code>0~T~~T0IPRT~3200~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>320</aircraft>
+                     <arr_datetime>2016-12-26T11:55:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-26T09:35:00.000Z</dept_datetime>
+                     <dept_term null="true" />
+                     <dest>DEL</dest>
+                     <dur null="true" />
+                     <flt_num>6E 644</flt_num>
+                     <origin>HYD</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>1805.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>L:S</fare_cls>
+                        <fb_code>0~L~~LSIP~4910~~2~X</fb_code>
+                        <seats>30</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2365.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:R</fare_cls>
+                        <fb_code>0~T~~T0IP~4910~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2800.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:N</fare_cls>
+                        <fb_code>0~T~~T0IPRT~3200~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>320</aircraft>
+                     <arr_datetime>2016-12-26T14:40:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-26T12:30:00.000Z</dept_datetime>
+                     <dept_term null="true" />
+                     <dest>DEL</dest>
+                     <dur null="true" />
+                     <flt_num>6E 845</flt_num>
+                     <origin>HYD</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>1805.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>L:S</fare_cls>
+                        <fb_code>0~L~~LSIP~4910~~2~X</fb_code>
+                        <seats>30</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2365.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:R</fare_cls>
+                        <fb_code>0~T~~T0IP~4910~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2800.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:N</fare_cls>
+                        <fb_code>0~T~~T0IPRT~3200~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>320</aircraft>
+                     <arr_datetime>2016-12-26T16:45:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-26T14:40:00.000Z</dept_datetime>
+                     <dept_term null="true" />
+                     <dest>DEL</dest>
+                     <dur null="true" />
+                     <flt_num>6E 778</flt_num>
+                     <origin>HYD</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>1805.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>L:S</fare_cls>
+                        <fb_code>0~L~~LSIP~4910~~2~X</fb_code>
+                        <seats>30</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2365.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:R</fare_cls>
+                        <fb_code>0~T~~T0IP~4910~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>320</aircraft>
+                     <arr_datetime>2016-12-26T19:35:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-26T17:30:00.000Z</dept_datetime>
+                     <dept_term null="true" />
+                     <dest>DEL</dest>
+                     <dur null="true" />
+                     <flt_num>6E 302</flt_num>
+                     <origin>HYD</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>1805.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>L:S</fare_cls>
+                        <fb_code>0~L~~LSIP~4910~~2~X</fb_code>
+                        <seats>30</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2365.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:R</fare_cls>
+                        <fb_code>0~T~~T0IP~4910~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>320</aircraft>
+                     <arr_datetime>2016-12-26T20:45:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-26T18:30:00.000Z</dept_datetime>
+                     <dept_term null="true" />
+                     <dest>DEL</dest>
+                     <dur null="true" />
+                     <flt_num>6E 684</flt_num>
+                     <origin>HYD</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>1805.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>L:S</fare_cls>
+                        <fb_code>0~L~~LSIP~4910~~2~X</fb_code>
+                        <seats>30</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2365.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:R</fare_cls>
+                        <fb_code>0~T~~T0IP~4910~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2800.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:N</fare_cls>
+                        <fb_code>0~T~~T0IPRT~3200~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>320</aircraft>
+                     <arr_datetime>2016-12-26T23:20:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-26T21:00:00.000Z</dept_datetime>
+                     <dept_term null="true" />
+                     <dest>DEL</dest>
+                     <dur null="true" />
+                     <flt_num>6E 564</flt_num>
+                     <origin>HYD</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares>
+                  <fare>
+                     <element>
+                        <base>1805.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>L:S</fare_cls>
+                        <fb_code>0~L~~LSIP~4910~~2~X</fb_code>
+                        <seats>30</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2365.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:R</fare_cls>
+                        <fb_code>0~T~~T0IP~4910~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                     <element>
+                        <base>2800.0000</base>
+                        <cabin_cls>Y</cabin_cls>
+                        <cabin_cls_name>Economy</cabin_cls_name>
+                        <charge_jn null="true" />
+                        <charge_kkc null="true" />
+                        <charge_ot null="true" />
+                        <charge_psf null="true" />
+                        <charge_sbc null="true" />
+                        <charge_udf null="true" />
+                        <charge_yq null="true" />
+                        <charge_yr null="true" />
+                        <fare_cls>T:N</fare_cls>
+                        <fb_code>0~T~~T0IPRT~3200~~1~X</fb_code>
+                        <seats>120</seats>
+                        <vdr_sup_prov_login_id>4</vdr_sup_prov_login_id>
+                     </element>
+                  </fare>
+               </fares>
+               <segs>
+                  <seg>
+                     <aircraft>320</aircraft>
+                     <arr_datetime>2016-12-27T00:15:00.000Z</arr_datetime>
+                     <arr_term null="true" />
+                     <bag_alw>15K</bag_alw>
+                     <dept_datetime>2016-12-26T22:05:00.000Z</dept_datetime>
+                     <dept_term null="true" />
+                     <dest>DEL</dest>
+                     <dur null="true" />
+                     <flt_num>6E 766</flt_num>
+                     <origin>HYD</origin>
+                     <stops>0</stops>
+                     <via null="true" />
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares null="true" />
+               <segs>
+                  <seg>
+                     <element>
+                        <aircraft>320</aircraft>
+                        <arr_datetime>2016-12-26T07:30:00.000Z</arr_datetime>
+                        <arr_term null="true" />
+                        <bag_alw>15K</bag_alw>
+                        <dept_datetime>2016-12-26T05:40:00.000Z</dept_datetime>
+                        <dept_term null="true" />
+                        <dest>AMD</dest>
+                        <dur null="true" />
+                        <flt_num>6E 372</flt_num>
+                        <origin>HYD</origin>
+                        <stops>0</stops>
+                        <via null="true" />
+                     </element>
+                     <element>
+                        <aircraft>320</aircraft>
+                        <arr_datetime>2016-12-26T10:30:00.000Z</arr_datetime>
+                        <arr_term null="true" />
+                        <bag_alw>15K</bag_alw>
+                        <dept_datetime>2016-12-26T08:40:00.000Z</dept_datetime>
+                        <dept_term>1</dept_term>
+                        <dest>DEL</dest>
+                        <dur null="true" />
+                        <flt_num>6E 518</flt_num>
+                        <origin>AMD</origin>
+                        <stops>0</stops>
+                        <via null="true" />
+                     </element>
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares null="true" />
+               <segs>
+                  <seg>
+                     <element>
+                        <aircraft>320</aircraft>
+                        <arr_datetime>2016-12-26T23:55:00.000Z</arr_datetime>
+                        <arr_term>1</arr_term>
+                        <bag_alw>15K</bag_alw>
+                        <dept_datetime>2016-12-26T22:10:00.000Z</dept_datetime>
+                        <dept_term null="true" />
+                        <dest>AMD</dest>
+                        <dur null="true" />
+                        <flt_num>6E 276</flt_num>
+                        <origin>HYD</origin>
+                        <stops>0</stops>
+                        <via null="true" />
+                     </element>
+                     <element>
+                        <aircraft>320</aircraft>
+                        <arr_datetime>2016-12-27T07:00:00.000Z</arr_datetime>
+                        <arr_term null="true" />
+                        <bag_alw>15K</bag_alw>
+                        <dept_datetime>2016-12-27T05:30:00.000Z</dept_datetime>
+                        <dept_term>1</dept_term>
+                        <dest>DEL</dest>
+                        <dur null="true" />
+                        <flt_num>6E 683</flt_num>
+                        <origin>AMD</origin>
+                        <stops>0</stops>
+                        <via null="true" />
+                     </element>
+                  </seg>
+               </segs>
+            </element>
+            <element>
+               <fares null="true" />
+               <segs>
+                  <seg>
+                     <element>
+                        <aircraft>320</aircraft>
+                        <arr_datetime>2016-12-26T23:55:00.000Z</arr_datetime>
+                        <arr_term>1</arr_term>
+                        <bag_alw>15K</bag_alw>
+                        <dept_datetime>2016-12-26T22:10:00.000Z</dept_datetime>
+                        <dept_term null="true" />
+                        <dest>AMD</dest>
+                        <dur null="true" />
+                        <flt_num>6E 276</flt_num>
+                        <origin>HYD</origin>
+                        <stops>0</stops>
+                        <via null="true" />
+                     </element>
+                     <element>
+                        <aircraft>320</aircraft>
+                        <arr_datetime>2016-12-27T03:25:00.000Z</arr_datetime>
+                        <arr_term>1</arr_term>
+                        <bag_alw>15K</bag_alw>
+                        <dept_datetime>2016-12-27T01:40:00.000Z</dept_datetime>
+                        <dept_term null="true" />
+                        <dest>DEL</dest>
+                        <dur null="true" />
+                        <flt_num>6E 394</flt_num>
+                        <origin>AMD</origin>
+                        <stops>0</stops>
+                        <via null="true" />
+                     </element>
+                  </seg>
+               </segs>
+            </element>
+         </flt>
+      </return_sector>
+      <rq>
+         <onward_sector>
+            <element>
+               <dept_date>2016-12-20 00:00</dept_date>
+               <dest>HYD</dest>
+               <origin>DEL</origin>
+            </element>
+         </onward_sector>
+         <return_sector>
+            <element>
+               <dept_date>2016-12-26 00:00</dept_date>
+               <dest>DEL</dest>
+               <origin>HYD</origin>
+            </element>
+         </return_sector>
+      </rq>
+      <status>success</status>
+   </flights_avail_search_rs>
+</root>

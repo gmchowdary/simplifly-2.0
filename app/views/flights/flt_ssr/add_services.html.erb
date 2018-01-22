@@ -1,0 +1,290 @@
+<style>
+    .a-s-ssr-m{display:none;}
+    .a-s-addons-select{width:240px;height:28px;background:white;border:1px solid gray;}
+    .a-s-meals-box{}
+    .a-s-warnings p{color:red;font-style:italic;}
+</style>
+<% 
+  trip_type = (@flight.keys)[0][0..1]
+%>
+<div class="a-s-container">
+  <%= form_for :add_services, {url: flights_flt_ticket_show_summary_path(selected_flights: @selected_flt_booking_obj,trip_type: trip_type ) } { |f| %>
+    <div class="a-s-main-header">
+      <h4>Add Services</h4>
+    </div>
+    <div class="a-s-data-container">
+      <div class="a-s-sub-header" >
+        <span>Personal Information</span>
+      </div>
+      <div class="a-s-table">
+        <div class="a-s-table-row">
+          <div class="a-s-table-key">Passenger Name</div>
+          <div class="a-s-table-value"><b>: Mr. Traveler Level6</b></div>
+        </div>
+        <div class="a-s-table-row">
+          <div class="a-s-table-key">Email</div>
+          <div class="a-s-table-value"><b>: traveler_level6@admin.com</b></div>
+        </div>
+        <div class="a-s-table-row">
+          <div class="a-s-table-key">Alternate Email (Optional)</div>
+          <div class="a-s-table-value"><b>: <%= f.text_field :alternate_email %></b></div>
+        </div>
+        <div class="a-s-table-row">
+          <div class="a-s-table-key">Mobile No</div>
+          <div class="a-s-table-value"><b>: <%= f.text_field :mobile %></b></div>
+        </div>                    
+      </div>
+    </div>
+    <div class="a-s-data-container">
+      <div class="a-s-sub-header" >
+        <span>Approver</span>
+      </div>
+      <div class="a-s-table">
+        <div class="a-s-table-row">
+          <div class="a-s-table-key">Select Approver</div>
+          <div class="a-s-table-value">
+            <div>
+              <%= f.select(:approver, [['Sateesh Chaduvula (Project Manager)', 'Sateesh Chaduvula (Project Manager)'],
+                                  ['Geeth Chowdary (Delivery Manager)', 'Geeth Chowdary (Delivery Manager)']
+                                 ],{ :prompt => "Please select"}, style: "width:280px;height:28px;background:white;border:1px solid gray;", required: true
+                                 ) %>
+            </div>
+          </div>
+        </div>                  
+      </div>
+    </div>
+
+<%
+  fare = extract_charges_from_fare_obj(@fare)
+  total_fare = get_total(fare)
+  stops = 0
+%>
+<% @flight.each{ |trip_type,flight_arr| %>
+
+<% flt_num,dept_datetime,arr_datetime,origin,dest,stops,via,aircraft,dept_term,arr_term,dur,bag_alw = [],[],[],[],[],-1,[],[],[],[],[],[]
+  flight_arr.each{ |seg|
+    flt_num << seg.flt_num
+    dept_datetime << seg.dept_datetime
+    arr_datetime << seg.arr_datetime
+    origin << seg.origin
+    dest << seg.dest
+    stops += 1
+    via << seg.via
+    aircraft << seg.aircraft
+    dept_term << seg.dept_term
+    arr_term << seg.arr_term
+    dur << seg.dur
+    bag_alw << seg.bag_alw
+  }
+  flt_num = flt_num.join("/")
+  al_code = get_airline_code(flt_num)
+  aircraft = "Boeing " + (aircraft.join(" / Boeing "))
+  dept_airport_name = get_airport_name origin[0]
+  arr_airport_name = get_airport_name dest[-1]
+  stops = get_stops_str stops
+  duration = duration_cal( dept_datetime[0] , arr_datetime[-1] )
+  dept_time = get_time_from_date_obj(dept_datetime[0])
+  arr_time = get_time_from_date_obj(arr_datetime[-1])
+%>
+    <div class="a-s-data-container" style='border:1px solid #d3d3d3;'>
+      <div class="a-s-sub-header" >
+        <span>Flight Information</span>
+      </div>
+      
+      <div class="a-s-table">
+        <div class="a-s-selected-flt-box">
+          <div class="a-s-selected-flt-info">
+            <div>
+              <span>
+                <%=  image_tag(al_code+".jpg", class: "search-flight-info-part-flight-img") %>
+              </span>								
+            </div>
+            <div>
+              <span><%= get_airline_name(al_code) %></span>
+            </div>
+            <div>
+              <small><%= flt_num %></small>
+            </div>
+          </div>
+          <div class="a-s-selected-flt-from-data">
+            <div>
+              <span><small><%= date_fomatter_d_m_dt_y dept_datetime[0] %></small></span>
+            </div>
+            <div>
+              <span><b><%= get_time_from_date_obj dept_datetime[0] %> </b></span>
+              <span><b><%= origin[0] %></b></span>
+            </div>
+            <div>
+              <span><small><%= dept_airport_name %></small>, Terminal-<%=  dept_term[-1] %></span>
+            </div>
+          </div>
+          <div class="a-s-selected-flt-from-to-more-info">
+            <div>
+              <span><%= stops == 0 ? "Non-Stop" : pluralize(stops, 'Stop') %></span>
+            </div>
+            <div>
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </div>
+            <div>
+              <span><small><%= duration %></small></span>
+            </div>
+          </div>
+          <div class="a-s-selected-flt-to-data">
+            <div>
+              <span><small><%=  date_fomatter_d_m_dt_y arr_datetime[-1] %></small></span>
+            </div>
+            <div>
+                <span><b><%= dest[-1] %></b></span>
+              <span><b><%= get_time_from_date_obj arr_datetime[-1] %></b></span>
+            </div>
+            <div>
+              <span><small><%= arr_airport_name %></small>, Terminal-<%=  arr_term[-1] %></span>
+            </div>
+          </div>
+        </div>
+          
+        
+        <div class="a-s-selected-flt-extra-info">
+          <i class="fa fa-suitcase" aria-hidden="true"></i> <small>Check-in: 15 KG + Cabin: 7 KG</small><br>
+          <i class="fa fa-cutlery" aria-hidden="true"></i> Meals Inc. <small> Meals included.</small>
+        </div>
+        <div class="a-s-selected-flt-total-price">
+          <center>
+            <h5><i class='fa fa-inr' aria-hidden='true'></i> <%= fare_comma_seperator(total_fare) %></h5>
+            <div><b class="<%= get_btn_color_class_based(get_fare_class(@fare.fare_cls)) %>" style="padding:3px 4px;border-radius:4px;"><%= get_fare_class(@fare.fare_cls) %></b></div>
+            <div class="a-s-selected-flt-more-details">
+              <div class="a-s-selected-flt-more-details-btn" onclick="show_more_details('search-description-more-details')">
+                <div>More details</div>
+              </div>
+            </div>
+          </center>
+        </div>
+        <div class="a-s-selected-flt-more-violation-btn" onclick="show_more_details('search-description-more-details')">
+          <div><h1><i class="fa fa-minus-circle" aria-hidden="true"></h1></i></div>
+          <span>Deviation</span>
+        </div>
+        <div class="a-s-selected-flt-fixed-services">
+          <button type="button" class="btn btn-info btn-sm" onclick="collapse_div('a-s-ssr-box','a-s-meals')">Add Meals and more</button>
+          <br/>
+          <br/>
+          <!-- <button type="button" class="btn btn-info btn-sm" onclick="collapse_div('a-s-ssr-box','a-s-bags')"></button> -->
+          <button type="button" class="btn btn-sm btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Seat</button>
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Available Seats</h4>
+                </div>
+                <div class="modal-body">
+                    <%= render "seat_map"  %>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+        
+      <div>
+          <script>
+            function collapse_div(maindiv,subdiv){
+              $("." + 'a-s-ssr-m').hide();
+              $("." + subdiv).show();
+              $("." + maindiv).collapse('toggle');
+            }
+            function show_hide_div(maindiv){
+              $("." + 'a-s-ssr-m').hide();
+              $("." + maindiv).show();
+            }
+          </script>
+          <div class="a-s-ssr-box collapse" style="float:left;width:100%;height:auto;margin:2px;">
+            <div class="a-s-data-container">
+              <div class="a-s-sub-header" >
+                <span>Add-Ons</span>
+              </div>
+              <div>
+                <%= render "ssr_dropdown_ow" %>
+              </div>              
+            </div>      
+          </div>
+      </div>
+    </div>   
+    
+
+ 
+    <div class="a-s-data-container">
+      <div class="a-s-sub-header" >
+        <span>Add Surface Segments</span>
+      </div>
+      <div class="a-s-table">
+          <button type="button" class="btn btn-sm btn-info btn-lg" data-toggle="modal" data-target="#addcab">Book Cab</button>
+          <div class="modal fade" id="addcab" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Book Cab</h4>
+                </div>
+                <div class="modal-body">
+                    <%= render "cabs"  %>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <button type="button" class="btn btn-sm btn-info btn-lg" data-toggle="modal" data-target="#addhotel">Book Hotel</button>
+          <div class="modal fade" id="addhotel" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Available Hotels</h4>
+                </div>
+                <div class="modal-body">
+                    <%= render "hotels"  %>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="a-s-data-container">
+      <div class="a-s-sub-header" >
+        <span>Deviations</span>
+      </div>
+      <div class="a-s-table">
+        <div class="a-s-warnings">
+          <p>Preffered Carrier: Not Selected</p>
+          <p>Carrier: First Class</p>
+        </div>
+      </div>
+    </div>
+    <div class="a-s-data-container">
+      <div class="a-s-sub-header" >
+        <span>Your Reasons</span>
+      </div>
+      <div class="a-s-table">
+        <%= f.text_area "reason_#{trip_type}", class: "a-s-selected-flt-more-violation-text-area-box",required: true  %>
+      </div>
+    </div>
+  <%  } %>
+    <div class="a-s-data-container">
+      <center>
+        <%= f.submit "Show Summary", class:"btn btn-sm btn-success" %>
+      </center>
+    </div>
+  <% } %>
+</div>

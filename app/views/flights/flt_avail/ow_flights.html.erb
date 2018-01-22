@@ -1,0 +1,18 @@
+<%= render "search_form" %>
+<% unless @onward_segments.empty? %>
+  <div class="search-out">
+    <div class="search-description"></div>
+    <%= render "ow_avail_filters" %>
+    <div class="search-results">
+      <%= render "ow_sort_header" %>
+      <div>
+        <div class="float-left">
+            <%  @segments = @onward_segments.flt %>
+            <%= render "ow_flights" %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% else %>
+  <%= render "no_flights"  %>
+<% end %>

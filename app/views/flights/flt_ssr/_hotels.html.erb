@@ -1,0 +1,178 @@
+<style>
+  .a-s-hotels-box-main{width:100%;height:auto;float:left;}
+  .a-s-hotels-box-container{width:98%;height:auto;float:left;padding:5px;margin:1%;border:1px solid #d3d3d3;}
+  .a-s-hotels-search input{width:175px;}
+  
+  .a-s-hotels-box-image{width:150px;height:130px;float:left;margin:0px 2px;opacity:0.7;border:1px solid #d3d3d3;padding:2px;}
+  .a-s-hotels-box-image:hover{opacity:1}
+  .a-s-hotels-box-image img{width:100%;max-height:100px;float:left;margin:0px 2px;}
+  .a-s-hotels-box-image span{text-align:center;font-weight:bold;}
+  .a-s-hotels-box-desc{width:200px;height:130px;float:left;border:1px solid #d3d3d3;padding:2px;}
+  .a-s-hotels-box-desc td{text-align:left;font-weight:bold;}
+  .a-s-hotels-book-btn-box{width:90px;float:left;padding-top:30px;text-align:center;font-weight:bold;font-size:20px;}
+</style>
+<div class="a-s-hotels-box-main">
+    <div class="a-s-hotels-box-container">
+        <div class="a-s-hotels-search">
+            <table style="width:100%;">
+                <tr>
+                    <td>Location</td>
+                    <td>:</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Days</td>
+                    <td>:</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Type</td>
+                    <td>:</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <button class="btn btn-success btn-sm">go</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="a-s-hotels-box-container">
+          <div class="a-s-hotels-box-image">
+            <%= image_tag "lela.jpeg" %>
+            <center><span>Lela Hotel</span></center>
+          </div>
+          <div class="a-s-hotels-box-desc">
+              <table>
+                  <tr>
+                      <td>Air Condition</td>
+                      <td>:</td>
+                      <td>AC</td>
+                  </tr>
+                  <tr>
+                      <td>Cost/day</td>
+                      <td>:</td>
+                      <td>1600 <i class="fa fa-inr" aria-hidden="true"></i></td>
+                  </tr>
+                  <tr>
+                      <td>Extras</td>
+                      <td>:</td>
+                      <td>WiFi</td>
+                  </tr>
+                  <tr>
+                      <td>Type</td>
+                      <td>:</td>
+                      <td>Small</td>
+                  </tr>
+                  <tr>
+                      <td>Sharing</td>
+                      <td>:</td>
+                      <td>3ppl</td>
+                  </tr>
+              </table>
+          </div>
+          <div class="a-s-hotels-book-btn-box">
+            <center>
+              <div class="a-s-hotels-total-fare">
+                3780 <i class="fa fa-inr" aria-hidden="true"></i>
+              </div>
+              <div>
+                <button class="btn btn-success btn-sm">Book</button>
+              </div>
+            </center>
+          </div>
+    </div>
+    <div class="a-s-hotels-box-container">
+          <div class="a-s-hotels-box-image">
+            <%= image_tag "doubletree.jpeg" %>
+            <center><span>Double Tree</span></center>
+          </div>
+          <div class="a-s-hotels-box-desc">
+              <table>
+                  <tr>
+                      <td>Air Condition</td>
+                      <td>:</td>
+                      <td>AC</td>
+                  </tr>
+                  <tr>
+                      <td>Cost/day</td>
+                      <td>:</td>
+                      <td>2800 <i class="fa fa-inr" aria-hidden="true"></i></td>
+                  </tr>
+                  <tr>
+                      <td>Extras</td>
+                      <td>:</td>
+                      <td>WiFi + Dinner</td>
+                  </tr>
+                  <tr>
+                      <td>Type</td>
+                      <td>:</td>
+                      <td>3 Star</td>
+                  </tr>
+                  <tr>
+                      <td>Sharing</td>
+                      <td>:</td>
+                      <td>4ppl</td>
+                  </tr>
+              </table>
+          </div>
+          <div class="a-s-hotels-book-btn-box">
+            <center>
+              <div class="a-s-hotels-total-fare">
+                6700 <i class="fa fa-inr" aria-hidden="true"></i>
+              </div>
+              <div>
+                <button class="btn btn-success btn-sm">Book</button>
+              </div>
+            </center>
+          </div>
+    </div>
+    <div class="a-s-hotels-box-container">
+          <div class="a-s-hotels-box-image">
+            <%= image_tag "thecrown.jpeg" %>
+            <center><span>The Crown</span></center>
+          </div>
+          <div class="a-s-hotels-box-desc">
+              <table>
+                  <tr>
+                      <td>Air Condition</td>
+                      <td>:</td>
+                      <td>AC</td>
+                  </tr>
+                  <tr>
+                      <td>Cost/km</td>
+                      <td>:</td>
+                      <td>3600 <i class="fa fa-inr" aria-hidden="true"></i></td>
+                  </tr>
+                  <tr>
+                      <td>Extras</td>
+                      <td>:</td>
+                      <td>WiFi + Dinner</td>
+                  </tr>
+                  <tr>
+                      <td>Type</td>
+                      <td>:</td>
+                      <td>5 Star</td>
+                  </tr>
+                  <tr>
+                      <td>Sharing</td>
+                      <td>:</td>
+                      <td>3ppl</td>
+                  </tr>
+              </table>
+          </div>
+          <div class="a-s-hotels-book-btn-box">
+            <center>
+              <div class="a-s-hotels-total-fare">
+                8000 <i class="fa fa-inr" aria-hidden="true"></i>
+              </div>
+              <div>
+                <button class="btn btn-success btn-sm">Book</button>
+              </div>
+            </center>
+          </div>
+    </div>
+</div>

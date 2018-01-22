@@ -1,0 +1,1 @@
+{"flights_avail_search_rs":{"call_id":"SIM_1234567890","ap_names":[{"ap":"AMD - Ahmedabad"},{"ap":"DEL - New Delhi"}],"rq":{"onward_sector":[{"origin":"AMD","dest":"DEL","dept_date":"2018-01-22 00:00"}],"return_sector":[]},"status":"failed","remark":"Couldn't find VendorReservationSystemRelation with 'id'=1"}}

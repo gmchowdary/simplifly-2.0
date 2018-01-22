@@ -1,0 +1,2 @@
+class TpRestriction < ApplicationRecord
+end

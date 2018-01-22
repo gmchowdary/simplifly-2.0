@@ -1,0 +1,2 @@
+class AirportCode < ApplicationRecord
+end

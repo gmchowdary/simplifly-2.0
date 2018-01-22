@@ -1,0 +1,2225 @@
+{
+"flights_avail_search_rs" : {
+   "onward_sector": [
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "6E 428",
+               "dept_datetime": "2017-05-20T04:45:00.000Z",
+               "arr_datetime": "2017-05-20T06:15:00.000Z",
+               "origin": "HYD",
+               "dest": "BOM",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "",
+               "arr_term": "",
+               "dur": "1h 30m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "3",
+               "base": "1199.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:F",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "2649.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~V~~V0IPRT~3200~~1~X",
+               "fare_cls": "V:N",
+               "seats": "80"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "1099.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~LSIP~4910~~10~X",
+               "fare_cls": "L:S",
+               "seats": "30"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "6E 319",
+               "dept_datetime": "2017-05-20T05:45:00.000Z",
+               "arr_datetime": "2017-05-20T07:15:00.000Z",
+               "origin": "HYD",
+               "dest": "BOM",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "",
+               "arr_term": "",
+               "dur": "1h 30m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "3",
+               "base": "1199.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:F",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "2649.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~V~~V0IPRT~3200~~1~X",
+               "fare_cls": "V:N",
+               "seats": "80"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "1099.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~LSIP~4910~~10~X",
+               "fare_cls": "L:S",
+               "seats": "30"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "SG 704",
+               "dept_datetime": "2017-05-20T05:50:00.000Z",
+               "arr_datetime": "2017-05-20T07:05:00.000Z",
+               "origin": "HYD",
+               "dest": "BOM",
+               "stops": "0",
+               "via": "",
+               "aircraft": "737",
+               "dept_term": "",
+               "arr_term": "1B",
+               "dur": "1h 15m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "2",
+               "base": "4687.0000",
+               "charge_yq": "",
+               "charge_yr": "50",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "",
+               "charge_kkc": "9",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~J~~JCORP~0941~~12~X",
+               "fare_cls": "J:CP",
+               "seats": "20"
+            },
+            {
+               "vdr_sup_prov_login_id": "1",
+               "base": "5889.0000",
+               "charge_yq": "",
+               "charge_yr": "50",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "",
+               "charge_kkc": "9",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~J~~JFLEXSME~6011~~4~X",
+               "fare_cls": "J:HF",
+               "seats": "20"
+            },
+            {
+               "vdr_sup_prov_login_id": "1",
+               "base": "3999.0000",
+               "charge_yq": "",
+               "charge_yr": "50",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "",
+               "charge_kkc": "9",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~J~~JHBORT~6041~~4~X",
+               "fare_cls": "J:HO",
+               "seats": "20"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "AI 50",
+               "dept_datetime": "2017-05-20T06:15:00.000Z",
+               "arr_datetime": "2017-05-20T08:00:00.000Z",
+               "origin": "HYD",
+               "dest": "BOM",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "",
+               "arr_term": "",
+               "dur": "1h 20m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "2499.0000",
+               "charge_yq": "87.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~M~~M0IP~1057~~2~X",
+               "fare_cls": "M:R",
+               "seats": "60"
+            },
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "18000.0000",
+               "charge_yq": "23.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:A",
+               "seats": "30"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "6E 247",
+               "dept_datetime": "2017-05-20T07:15:00.000Z",
+               "arr_datetime": "2017-05-20T08:45:00.000Z",
+               "origin": "HYD",
+               "dest": "BOM",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "",
+               "arr_term": "",
+               "dur": "1h 30m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "3",
+               "base": "1199.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:F",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "2499.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~M~~M0IP~1057~~2~X",
+               "fare_cls": "M:R",
+               "seats": "60"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "1099.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~LSIP~4910~~10~X",
+               "fare_cls": "L:S",
+               "seats": "30"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "6E 608",
+               "dept_datetime": "2017-05-20T09:50:00.000Z",
+               "arr_datetime": "2017-05-20T11:20:00.000Z",
+               "origin": "HYD",
+               "dest": "BOM",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "",
+               "arr_term": "",
+               "dur": "1h 30m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "3",
+               "base": "1199.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:F",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "2649.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~V~~V0IPRT~3200~~1~X",
+               "fare_cls": "V:N",
+               "seats": "80"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "1099.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~LSIP~4910~~10~X",
+               "fare_cls": "L:S",
+               "seats": "30"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "AI 615",
+               "dept_datetime": "2017-05-20T09:45:00.000Z",
+               "arr_datetime": "2017-05-20T11:30:00.000Z",
+               "origin": "HYD",
+               "dest": "BOM",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "",
+               "arr_term": "",
+               "dur": "1h 45m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "3471.0000",
+               "charge_yq": "87.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~M~~M0IP~1057~~2~X",
+               "fare_cls": "M:R",
+               "seats": "60"
+            },
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "18000.0000",
+               "charge_yq": "23.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:A",
+               "seats": "30"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "SG 422",
+               "dept_datetime": "2017-05-20T10:35:00.000Z",
+               "arr_datetime": "2017-05-20T11:50:00.000Z",
+               "origin": "HYD",
+               "dest": "BOM",
+               "stops": "0",
+               "via": "",
+               "aircraft": "737",
+               "dept_term": "",
+               "arr_term": "1B",
+               "dur": "1h 15m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "2",
+               "base": "4687.0000",
+               "charge_yq": "",
+               "charge_yr": "50",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "",
+               "charge_kkc": "9",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~J~~JCORP~0941~~12~X",
+               "fare_cls": "J:CP",
+               "seats": "4"
+            },
+            {
+               "vdr_sup_prov_login_id": "1",
+               "base": "5889.0000",
+               "charge_yq": "",
+               "charge_yr": "50",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "",
+               "charge_kkc": "9",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~J~~JFLEXSME~6011~~4~X",
+               "fare_cls": "J:HF",
+               "seats": "4"
+            },
+            {
+               "vdr_sup_prov_login_id": "1",
+               "base": "3999.0000",
+               "charge_yq": "",
+               "charge_yr": "50",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "",
+               "charge_kkc": "9",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~J~~JHBORT~6041~~4~X",
+               "fare_cls": "J:HO",
+               "seats": "4"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "9W 7079",
+               "dept_datetime": "2017-05-20T11:50:00.000Z",
+               "arr_datetime": "2017-05-20T13:10:00.000Z",
+               "origin": "HYD",
+               "dest": "BOM",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "",
+               "arr_term": "",
+               "dur": "1h 20m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "5094",
+               "charge_yq": "49.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~M~~M0IP~1057~~2~X",
+               "fare_cls": "M:F",
+               "seats": "60"
+            },
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "14000.0000",
+               "charge_yq": "23.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:B",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "5624.0000",
+               "charge_yq": "49.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~M~~M0IP~1057~~2~X",
+               "fare_cls": "M:R",
+               "seats": "60"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "AI 619",
+               "dept_datetime": "2017-05-20T12:05:00.000Z",
+               "arr_datetime": "2017-05-20T13:50:00.000Z",
+               "origin": "HYD",
+               "dest": "BOM",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "",
+               "arr_term": "",
+               "dur": "1h 45m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "27000.0000",
+               "charge_yq": "23.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:F",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "5267.0000",
+               "charge_yq": "49.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~M~~M0IP~1057~~2~X",
+               "fare_cls": "M:R",
+               "seats": "60"
+            },
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "18000.0000",
+               "charge_yq": "23.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:A",
+               "seats": "30"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "9W 7081",
+               "dept_datetime": "2017-05-20T12:10:00.000Z",
+               "arr_datetime": "2017-05-20T13:30:00.000Z",
+               "origin": "HYD",
+               "dest": "BOM",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "",
+               "arr_term": "",
+               "dur": "1h 20m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "5094",
+               "charge_yq": "49.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~M~~M0IP~1057~~2~X",
+               "fare_cls": "M:F",
+               "seats": "60"
+            },
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "14000.0000",
+               "charge_yq": "23.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:B",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "3251.0000",
+               "charge_yq": "49.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~M~~M0IP~1057~~2~X",
+               "fare_cls": "M:R",
+               "seats": "60"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "6E 241",
+               "dept_datetime": "2017-05-20T12:20:00.000Z",
+               "arr_datetime": "2017-05-20T13:50:00.000Z",
+               "origin": "HYD",
+               "dest": "BOM",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "",
+               "arr_term": "",
+               "dur": "1h 30m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "3",
+               "base": "1199.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:F",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "2649.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~V~~V0IPRT~3200~~1~X",
+               "fare_cls": "V:N",
+               "seats": "80"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "1099.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~LSIP~4910~~10~X",
+               "fare_cls": "L:S",
+               "seats": "30"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "9W 349",
+               "dept_datetime": "2017-05-20T14:05:00.000Z",
+               "arr_datetime": "2017-05-20T15:25:00.000Z",
+               "origin": "HYD",
+               "dest": "BOM",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "",
+               "arr_term": "",
+               "dur": "1h 20m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "5094",
+               "charge_yq": "49.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~M~~M0IP~1057~~2~X",
+               "fare_cls": "M:F",
+               "seats": "60"
+            },
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "14000.0000",
+               "charge_yq": "23.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:B",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "2650",
+               "charge_yq": "49.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~M~~M0IP~1057~~2~X",
+               "fare_cls": "M:R",
+               "seats": "60"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "6E 809",
+               "dept_datetime": "2017-05-20T14:35:00.000Z",
+               "arr_datetime": "2017-05-20T16:05:00.000Z",
+               "origin": "HYD",
+               "dest": "BOM",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "",
+               "arr_term": "",
+               "dur": "1h 30m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "3",
+               "base": "1199.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:F",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "2649.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~V~~V0IPRT~3200~~1~X",
+               "fare_cls": "V:N",
+               "seats": "80"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "1099.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~LSIP~4910~~10~X",
+               "fare_cls": "L:S",
+               "seats": "30"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "6E 629",
+               "dept_datetime": "2017-05-20T16:40:00.000Z",
+               "arr_datetime": "2017-05-20T18:10:00.000Z",
+               "origin": "HYD",
+               "dest": "BOM",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "",
+               "arr_term": "",
+               "dur": "1h 30m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "3",
+               "base": "1199.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:F",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "2499.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~M~~M0IP~1057~~2~X",
+               "fare_cls": "M:R",
+               "seats": "60"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "1099.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~LSIP~4910~~10~X",
+               "fare_cls": "L:S",
+               "seats": "30"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "AI 866",
+               "dept_datetime": "2017-05-20T19:05:00.000Z",
+               "arr_datetime": "2017-05-20T20:50:00.000Z",
+               "origin": "HYD",
+               "dest": "BOM",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "",
+               "arr_term": "",
+               "dur": "1h 45m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "31200.0000",
+               "charge_yq": "23.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:F",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "7624.0000",
+               "charge_yq": "49.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~M~~M0IP~1057~~2~X",
+               "fare_cls": "M:R",
+               "seats": "60"
+            },
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "18000.0000",
+               "charge_yq": "23.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:A",
+               "seats": "30"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "SG 424",
+               "dept_datetime": "2017-05-20T21:35:00.000Z",
+               "arr_datetime": "2017-05-20T22:50:00.000Z",
+               "origin": "HYD",
+               "dest": "BOM",
+               "stops": "0",
+               "via": "",
+               "aircraft": "737",
+               "dept_term": "",
+               "arr_term": "1B",
+               "dur": "1h 15m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "2",
+               "base": "4687.0000",
+               "charge_yq": "",
+               "charge_yr": "50",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "",
+               "charge_kkc": "9",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~J~~JCORP~0941~~12~X",
+               "fare_cls": "J:CP",
+               "seats": "20"
+            },
+            {
+               "vdr_sup_prov_login_id": "1",
+               "base": "5889.0000",
+               "charge_yq": "",
+               "charge_yr": "50",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "",
+               "charge_kkc": "9",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~J~~JFLEXSME~6011~~4~X",
+               "fare_cls": "J:HF",
+               "seats": "20"
+            },
+            {
+               "vdr_sup_prov_login_id": "1",
+               "base": "3999.0000",
+               "charge_yq": "",
+               "charge_yr": "50",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "",
+               "charge_kkc": "9",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~J~~JHBORT~6041~~4~X",
+               "fare_cls": "J:HO",
+               "seats": "20"
+            }
+         ]
+      }
+   ],
+   "return_sector": [
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "SG 421",
+               "dept_datetime": "2017-05-20T05:20:00.000Z",
+               "arr_datetime": "2017-05-20T06:35:00.000Z",
+               "origin": "BOM",
+               "dest": "HYD",
+               "stops": "0",
+               "via": "",
+               "aircraft": "737",
+               "dept_term": "1B",
+               "arr_term": "",
+               "dur": "1h 15m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "2",
+               "base": "4687.0000",
+               "charge_yr": "50",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "275",
+               "charge_ot": "",
+               "charge_sbc": "",
+               "charge_kkc": "9",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~J~~JCORP~0941~~12~X",
+               "fare_cls": "J:CP",
+               "seats": "12"
+            },
+            {
+               "vdr_sup_prov_login_id": "1",
+               "base": "5889.0000",
+               "charge_yr": "50",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "275",
+               "charge_ot": "",
+               "charge_sbc": "",
+               "charge_kkc": "9",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~J~~JFLEXSME~6011~~4~X",
+               "fare_cls": "J:HF",
+               "seats": "12"
+            },
+            {
+               "vdr_sup_prov_login_id": "1",
+               "base": "3999.0000",
+               "charge_yr": "50",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "275",
+               "charge_ot": "",
+               "charge_sbc": "",
+               "charge_kkc": "9",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~J~~JHBORT~6041~~4~X",
+               "fare_cls": "J:HO",
+               "seats": "12"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "AI 866",
+               "dept_datetime": "2017-05-20T06:20:00.000Z",
+               "arr_datetime": "2017-05-20T08:05:00.000Z",
+               "origin": "BOM",
+               "dest": "HYD",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "",
+               "arr_term": "",
+               "dur": "1h 45m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "31200.0000",
+               "charge_yq": "23.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:F",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "7624.0000",
+               "charge_yq": "49.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~M~~M0IP~1057~~2~X",
+               "fare_cls": "M:R",
+               "seats": "60"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "6E 461",
+               "dept_datetime": "2017-05-20T06:40:00.000Z",
+               "arr_datetime": "2017-05-20T08:10:00.000Z",
+               "origin": "BOM",
+               "dest": "HYD",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "1",
+               "arr_term": "",
+               "dur": "1h 30m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "3",
+               "base": "1199.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:F",
+               "seats": "29"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "2499.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~M~~M0IP~1057~~2~X",
+               "fare_cls": "M:R",
+               "seats": "59"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "1099.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~LSIP~4910~~10~X",
+               "fare_cls": "L:S",
+               "seats": "29"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "AI 619",
+               "dept_datetime": "2017-05-20T07:05:00.000Z",
+               "arr_datetime": "2017-05-20T08:50:00.000Z",
+               "origin": "BOM",
+               "dest": "HYD",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "",
+               "arr_term": "",
+               "dur": "1h 45m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "27000.0000",
+               "charge_yq": "23.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:F",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "5267.0000",
+               "charge_yq": "49.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~M~~M0IP~1057~~2~X",
+               "fare_cls": "M:R",
+               "seats": "60"
+            }
+         ]
+      },   
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "6E 366",
+               "dept_datetime": "2017-05-20T09:30:00.000Z",
+               "arr_datetime": "2017-05-20T11:00:00.000Z",
+               "origin": "BOM",
+               "dest": "HYD",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "1",
+               "arr_term": "",
+               "dur": "1h 30m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "3",
+               "base": "1199.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:F",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "2649.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~V~~V0IPRT~3200~~1~X",
+               "fare_cls": "V:N",
+               "seats": "80"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "1099.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~LSIP~4910~~10~X",
+               "fare_cls": "L:S",
+               "seats": "30"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "6E 513",
+               "dept_datetime": "2017-05-20T12:05:00.000Z",
+               "arr_datetime": "2017-05-20T13:35:00.000Z",
+               "origin": "BOM",
+               "dest": "HYD",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "1",
+               "arr_term": "",
+               "dur": "1h 30m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "3",
+               "base": "1199.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:F",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "2649.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~V~~V0IPRT~3200~~1~X",
+               "fare_cls": "V:N",
+               "seats": "80"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "1099.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~LSIP~4910~~10~X",
+               "fare_cls": "L:S",
+               "seats": "30"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "9W 7079",
+               "dept_datetime": "2017-05-20T15:15:00.000Z",
+               "arr_datetime": "2017-05-20T16:35:00.000Z",
+               "origin": "BOM",
+               "dest": "HYD",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "",
+               "arr_term": "",
+               "dur": "1h 20m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "5624.0000",
+               "charge_yq": "49.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~M~~M0IP~1057~~2~X",
+               "fare_cls": "M:R",
+               "seats": "60"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "6E 264",
+               "dept_datetime": "2017-05-20T15:15:00.000Z",
+               "arr_datetime": "2017-05-20T16:45:00.000Z",
+               "origin": "BOM",
+               "dest": "HYD",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "1",
+               "arr_term": "",
+               "dur": "1h 30m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "3",
+               "base": "1199.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:F",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "2649.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~V~~V0IPRT~3200~~1~X",
+               "fare_cls": "V:N",
+               "seats": "80"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "1099.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~LSIP~4910~~10~X",
+               "fare_cls": "L:S",
+               "seats": "30"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "SG 423",
+               "dept_datetime": "2017-05-20T15:55:00.000Z",
+               "arr_datetime": "2017-05-20T17:10:00.000Z",
+               "origin": "BOM",
+               "dest": "HYD",
+               "stops": "0",
+               "via": "",
+               "aircraft": "737",
+               "dept_term": "1B",
+               "arr_term": "",
+               "dur": "1h 15m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "2",
+               "base": "4687.0000",
+               "charge_yr": "50",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "275",
+               "charge_ot": "",
+               "charge_sbc": "",
+               "charge_kkc": "9",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~J~~JCORP~0941~~12~X",
+               "fare_cls": "J:CP",
+               "seats": "20"
+            },
+            {
+               "vdr_sup_prov_login_id": "1",
+               "base": "5889.0000",
+               "charge_yr": "50",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "275",
+               "charge_ot": "",
+               "charge_sbc": "",
+               "charge_kkc": "9",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~J~~JFLEXSME~6011~~4~X",
+               "fare_cls": "J:HF",
+               "seats": "20"
+            },
+            {
+               "vdr_sup_prov_login_id": "1",
+               "base": "3999.0000",
+               "charge_yr": "50",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "275",
+               "charge_ot": "",
+               "charge_sbc": "",
+               "charge_kkc": "9",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~J~~JHBORT~6041~~4~X",
+               "fare_cls": "J:HO",
+               "seats": "20"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "6E 268",
+               "dept_datetime": "2017-05-20T16:40:00.000Z",
+               "arr_datetime": "2017-05-20T18:10:00.000Z",
+               "origin": "BOM",
+               "dest": "HYD",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "1",
+               "arr_term": "",
+               "dur": "1h 30m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "3",
+               "base": "1199.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:F",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "2649.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~V~~V0IPRT~3200~~1~X",
+               "fare_cls": "V:N",
+               "seats": "80"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "1099.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~LSIP~4910~~10~X",
+               "fare_cls": "L:S",
+               "seats": "30"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "9W 7081",
+               "dept_datetime": "2017-05-20T18:20:00.000Z",
+               "arr_datetime": "2017-05-20T19:40:00.000Z",
+               "origin": "BOM",
+               "dest": "HYD",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "",
+               "arr_term": "",
+               "dur": "1h 20m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "19791.0000",
+               "charge_yq": "23.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:F",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "3251.0000",
+               "charge_yq": "49.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~M~~M0IP~1057~~2~X",
+               "fare_cls": "M:R",
+               "seats": "60"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "6E 628",
+               "dept_datetime": "2017-05-20T18:50:00.000Z",
+               "arr_datetime": "2017-05-20T20:20:00.000Z",
+               "origin": "BOM",
+               "dest": "HYD",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "1",
+               "arr_term": "",
+               "dur": "1h 30m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "3",
+               "base": "1199.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:F",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "2499.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~M~~M0IP~1057~~2~X",
+               "fare_cls": "M:R",
+               "seats": "60"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "1099.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~LSIP~4910~~10~X",
+               "fare_cls": "L:S",
+               "seats": "30"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "6E 254",
+               "dept_datetime": "2017-05-20T20:10:00.000Z",
+               "arr_datetime": "2017-05-20T21:40:00.000Z",
+               "origin": "BOM",
+               "dest": "HYD",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "1",
+               "arr_term": "",
+               "dur": "1h 30m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "3",
+               "base": "1199.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:F",
+               "seats": "29"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "2649.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~V~~V0IPRT~3200~~1~X",
+               "fare_cls": "V:N",
+               "seats": "79"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "1099.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~LSIP~4910~~10~X",
+               "fare_cls": "L:S",
+               "seats": "29"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "9W 349",
+               "dept_datetime": "2017-05-20T20:45:00.000Z",
+               "arr_datetime": "2017-05-20T22:05:00.000Z",
+               "origin": "BOM",
+               "dest": "HYD",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "",
+               "arr_term": "",
+               "dur": "1h 20m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "14000.0000",
+               "charge_yq": "23.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:F",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "",
+               "base": "2650",
+               "charge_yq": "49.98",
+               "charge_yr": "",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "",
+               "charge_ot": "",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~M~~M0IP~1057~~2~X",
+               "fare_cls": "M:R",
+               "seats": "60"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "6E 234",
+               "dept_datetime": "2017-05-20T21:20:00.000Z",
+               "arr_datetime": "2017-05-20T22:50:00.000Z",
+               "origin": "BOM",
+               "dest": "HYD",
+               "stops": "0",
+               "via": "",
+               "aircraft": "320",
+               "dept_term": "1",
+               "arr_term": "",
+               "dur": "1h 30m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "3",
+               "base": "1199.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~L0CRP~7000~~4~X",
+               "fare_cls": "L:F",
+               "seats": "30"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "2649.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~V~~V0IPRT~3200~~1~X",
+               "fare_cls": "V:N",
+               "seats": "80"
+            },
+            {
+               "vdr_sup_prov_login_id": "4",
+               "base": "1099.0000",
+               "charge_yq": "100",
+               "charge_yr": "50",
+               "charge_psf": "147",
+               "charge_udf": "",
+               "charge_jn": "72",
+               "charge_ot": "42",
+               "charge_sbc": "3",
+               "charge_kkc": "3",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~L~~LSIP~4910~~10~X",
+               "fare_cls": "L:S",
+               "seats": "30"
+            }
+         ]
+      },
+      {
+         "segs": {
+            "seg": {
+               "flt_num": "SG 703",
+               "dept_datetime": "2017-05-20T21:35:00.000Z",
+               "arr_datetime": "2017-05-20T22:50:00.000Z",
+               "origin": "BOM",
+               "dest": "HYD",
+               "stops": "0",
+               "via": "",
+               "aircraft": "737",
+               "dept_term": "1B",
+               "arr_term": "",
+               "dur": "1h 15m",
+               "bag_alw": "15K"
+            }
+         },
+         "fares": [
+            {
+               "vdr_sup_prov_login_id": "2",
+               "base": "4687.0000",
+               "charge_yr": "50",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "275",
+               "charge_ot": "",
+               "charge_sbc": "",
+               "charge_kkc": "9",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~J~~JCORP~0941~~12~X",
+               "fare_cls": "J:CP",
+               "seats": "20"
+            },
+            {
+               "vdr_sup_prov_login_id": "1",
+               "base": "5889.0000",
+               "charge_yr": "50",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "275",
+               "charge_ot": "",
+               "charge_sbc": "",
+               "charge_kkc": "9",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~J~~JFLEXSME~6011~~4~X",
+               "fare_cls": "J:HF",
+               "seats": "20"
+            },
+            {
+               "vdr_sup_prov_login_id": "1",
+               "base": "3999.0000",
+               "charge_yr": "50",
+               "charge_psf": "230",
+               "charge_udf": "495",
+               "charge_jn": "275",
+               "charge_ot": "",
+               "charge_sbc": "",
+               "charge_kkc": "9",
+               "cabin_cls": "Y",
+               "cabin_cls_name": "Economy",
+               "fb_code": "0~J~~JHBORT~6041~~4~X",
+               "fare_cls": "J:HO",
+               "seats": "20"
+            }
+         ]
+      }
+   ],
+   "call_id": "SIM_1234567890",
+   "ap_names": [
+      "HYD - Hyderabad",
+      "BOM - Mumbai( Bombay)"
+   ],
+   "rq": {
+      "onward_sector": {
+         "origin": "HYD",
+         "dest": "BOM",
+         "dept_date": "2017-05-20 00:00"
+      },
+      "return_sector": {
+         "origin": "BOM",
+         "dest": "HYD",
+         "dept_date": "2017-05-20 00:00"
+      }
+   },
+   "status": "success",
+   "remark": ""
+}
+}

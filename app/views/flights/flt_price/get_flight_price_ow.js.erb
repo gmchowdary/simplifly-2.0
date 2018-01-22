@@ -1,0 +1,4 @@
+$(".search-description").html("<%= escape_javascript(render("ow_flight_fq")) %>");
+$("#complete_booking_ow").prop("checked",true);
+<% h = @response  %>
+$("#complete_booking_ow").val('<%= h.html_safe %>');

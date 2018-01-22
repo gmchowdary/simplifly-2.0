@@ -1,0 +1,36 @@
+{"flights_price_rs": {
+   "sector_price": [   {
+      "onward_sector": [{"segs": {"seg": [      {
+         "flt_num": "G8 422",
+         "dept_datetime": "2017-12-20T19:55:00.000Z",
+         "arr_datetime": "2017-12-20T22:05:00.000Z",
+         "origin": "DEL",
+         "dest": "HYD",
+         "stops": "0",
+         "via": null,
+         "aircraft": "320",
+         "dept_term": "1D",
+         "arr_term": null,
+         "dur": null,
+         "bag_alw": "15K"
+      }]}}],
+      "return_sector": [],
+      "fares": {"fare":       {
+         "base": 10000,
+         "charge_yr": 50,
+         "charge_yq": 300,
+         "charge_psf": 150,
+         "charge_udf": 564,
+         "charge_cst": 259,
+         "charge_sst": 259
+      }}
+   }],
+   "call_id": "SIM_1234567890",
+   "pax":    {
+      "adt": "1",
+      "chd": "0",
+      "inf": "0"
+   },
+   "status": "success",
+   "remark": ""
+}}

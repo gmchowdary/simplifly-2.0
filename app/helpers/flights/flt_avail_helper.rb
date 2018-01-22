@@ -1,0 +1,2 @@
+module Flights::FltAvailHelper
+end

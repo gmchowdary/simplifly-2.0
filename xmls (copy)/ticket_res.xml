@@ -1,0 +1,21 @@
+{"flights_ticket_rs": {
+   "call_id": "SIM-1234567890",
+   "pax":    {
+      "adt": "1",
+      "chd": "0",
+      "inf": "0"
+   },
+   "pax_details": {"pax": [   {
+      "pax_type": "ADT",
+      "first_name": "Venkat",
+      "middle_name": "Rao",
+      "last_name": "M",
+      "dob": "1988-12-20 00:00",
+      "phone_number": "1234567890",
+      "email": "venkateswara.rao@irissbsp.com",
+      "gender": "M",
+      "title": "MR"
+   }]},
+   "status": "success",
+   "remark": ""
+}}

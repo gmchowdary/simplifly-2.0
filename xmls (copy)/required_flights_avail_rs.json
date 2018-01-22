@@ -1,0 +1,86 @@
+{
+   "flights_avail_search_rs": {
+      "onward_sector": { [
+         "flt": {
+            "segs": {
+               "seg": [{
+                  "flt_num": "G8 421",
+                  "dept_datetime": "2017-09-30T05:35:00.000Z",
+                  "arr_datetime": "2017-09-30T07:55:00.000Z",
+                  "origin": "HYD",
+                  "dest": "DEL",
+                  "stops": "0",
+                  "via": null,
+                  "aircraft": "320",
+                  "dept_term": null,
+                  "arr_term": "1D",
+                  "dur": null,
+                  "bag_alw": "15K"
+               }]
+            },
+            "fares": {
+               "fare": [
+                  {
+                     "vdr_sup_rel_id": "9",
+                     "base": "885.0000",
+                     "charge_yq": 300,
+                     "charge_yr": 50,
+                     "charge_psf": 230,
+                     "charge_udf": 972,
+                     "charge_k3": 31,
+                     "charge_jn": null,
+                     "charge_ot": null,
+                     "charge_sbc": null,
+                     "charge_kkc": null,
+                     "charge_xxx": null,
+                     "cabin_cls": "Y",
+                     "cabin_cls_name": "Economy",
+                     "fb_code": "0~N~~G8~NO9RBINF~0005~~0~1~~X",
+                     "fare_cls": "N:GS",
+                     "seats": "9"
+                  },
+                  {
+                     "vdr_sup_rel_id": "9",
+                     "base": "13227.0000",
+                     "charge_yq": 300,
+                     "charge_yr": 50,
+                     "charge_psf": 230,
+                     "charge_udf": 972,
+                     "charge_k3": 31,
+                     "charge_jn": null,
+                     "charge_ot": null,
+                     "charge_sbc": null,
+                     "charge_kkc": null,
+                     "charge_xxx": null,
+                     "cabin_cls": "Y",
+                     "cabin_cls_name": "Economy",
+                     "fb_code": "0~C~~G8~CO9REINX~0001~~0~2~~X",
+                     "fare_cls": "C:GB",
+                     "seats": "3"
+                  }
+               ]
+            }
+         }
+      },
+      "status": "success",
+      "call_id": "SIM_1234567890",
+      "ap_names": {
+         "app": [
+            "HYD - Hyderabad",
+            "DEL - New Delhi"
+         ]
+      },
+      "rq": {
+         "onward_sector": [
+            {
+               "origin": "HYD",
+               "dest": "DEL",
+               "dept_date": "2017-09-30 00:00"
+            }
+         ],
+         "return_sector": []
+      },
+      "remark": ""
+   }
+}
+

@@ -1,0 +1,178 @@
+<% @segments.each{ |list| %>
+  <% next if list.fares.nil? %>
+  <% fares = list.fares.fare %>
+  <% seg = list.segs.seg %>
+  <% flt_num,dept_datetime,arr_datetime,origin,dest,stops,via,aircraft,dept_term,arr_term,dur,bag_alw = [],[],[],[],[],-1,[],[],[],[],[],[]
+        seg.each{ |seg|
+          flt_num << seg.flt_num
+          dept_datetime << seg.dept_datetime
+          arr_datetime << seg.arr_datetime
+          origin << seg.origin
+          dest << seg.dest
+          stops += 1
+          via << seg.via
+          aircraft << seg.aircraft
+          dept_term << seg.dept_term
+          arr_term << seg.arr_term
+          dur << seg.dur
+          bag_alw << seg.bag_alw
+        }
+        flt_num = flt_num.join("/")
+        al_code = get_airline_code(flt_num)
+        aircraft = "Boeing " + (aircraft.join(" / Boeing "))
+        dept_airport_name = get_airport_name origin[0]
+        arr_airport_name = get_airport_name dest[-1]
+        stops = get_stops_str stops
+        duration = duration_cal( dept_datetime[0] , arr_datetime[-1] )
+        dept_time = get_time_from_date_obj(dept_datetime[0])
+        arr_time = get_time_from_date_obj(arr_datetime[-1])
+        via.delete(nil)      
+        via = via.join("/")
+      %>
+     
+    <div class="search-results-flight-info">
+      <div class="search-results-flight">
+        <div class="search-flight-info-part-flight">
+          <% airline_code = flt_num.split(" ")[0] %>
+          <div class="search-flight-info-part-flight-img-div">
+            <div  class="dropdown">
+              <%=  image_tag("#{al_code}.jpg", class: "search-flight-info-part-flight-img") %>
+              <div class="dropdown-content dropdown-al-aligment-left">
+                <a href="#"><%= aircraft %></a>
+              </div>
+            </div>
+          </div>
+          <div class="search-flight-info-part-flight-font">
+            <div  class="dropdown">
+              <span><%= get_airline_name airline_code %></span><br>
+              <span><%= flt_num %></span>
+              <div class="dropdown-content dropdown-al-aligment-left">
+                <a href="#"><%= aircraft %></a>
+              </div>
+            </div>
+          </div>
+          <% if is_preferred_carrier? airline_code %>
+            <div  class="dropdown float-right">
+              <div class="search-flight-info-part-flight-highlighter">
+                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+              </div>
+              <div class="dropdown-content dropdown-al-aligment-left">
+                <a href="#">Preferred Carrier <i class="fa fa-bolt" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          <% end %>
+        </div>
+
+        <div class="search-flight-info-part-departure">
+          <div class="search-flight-info-part-flight-font-big">
+            <div  class="dropdown text-align-center">
+              <span><%= dept_time %></span>
+              <a href="_rt_flights.html.erb"></a>
+              <div class="dropdown-content dropdown-al-aligment-left">
+                <a href="#"><%=  dept_airport_name %></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="search-flight-info-part-arrival">
+            <div class="search-flight-info-part-flight-font-big">
+              <div  class="dropdown text-align-center">
+                <span><%= arr_time %></span>
+                <div class="dropdown-content dropdown-al-aligment-left">
+                  <a href="#"><%=  dept_airport_name %></a>
+                </div>
+              </div>
+            </div>
+        </div>
+          
+        <div class="search-flight-info-part-duration">
+          <div class="search-flight-info-part-flight-font-big">
+            <span><%=  duration %></span>
+          </div>
+        </div>
+        <div class="search-flight-info-part-more">
+          <div class="search-results-flight-more">
+            <%= stops %>
+          </div>
+          <div class="search-results-flight-more">
+            <i class="fa fa-briefcase" aria-hidden="true"></i>
+            <%= bag_alw[0] %>
+          </div>
+          <% unless via.empty? %>
+            <div class="search-results-flight-more">
+              <%=  "Via: " + via %>
+            </div>
+          <% end %>
+            <div class="search-results-flight-more">
+              <i class="fa fa-cutlery" aria-hidden="true"></i> Meals Inc.
+            </div>
+        </div>
+      </div>
+      <hr class="search-results-flight-hr" />
+        <div>
+          <% if fares.nil? %>
+          <% else %>  
+            <%# fares.fare.each{|fare| #for api%>
+            <% fares.each{|fare| %>
+            <div>
+                <%
+                  fare_brk_up = extract_charges_from_fare_obj(fare)
+                  total_fare = get_total(fare_brk_up)
+                  cabin_cls_name = fare.cabin_cls_name
+                  fb_code = fare.fb_code
+                  al_cde = get_airline_code(flt_num)
+                  fare_cls = get_fare_class(fare.fare_cls)
+                  seats = fare.seats
+                  button_style = get_btn_color_class_based(fare_cls)
+                %>
+                
+                
+                  <div class="dropdown float-right">
+                    <%= link_to "<button class='search-results-flight-fare-button #{button_style}'>#{fare_cls}</button><div class='search-results-flight-fare-cost'><i class='fa fa-inr' aria-hidden='true'></i>  #{fare_comma_seperator(total_fare)}</div>".html_safe, flights_flt_price_get_flight_price_ow_path(trip_type: "ow",segs: seg.to_json, fare: fare.to_json),{class: "search-results-flight-fare", :remote => true} %>
+                    
+                    <div class="dropdown-content dropdown-fare-aligment-right">
+                      <center>
+                        <button onclick="fare_desc('fare_breakup')">Fare Breakup</button> | <button onclick="fare_desc('fare_rule')">Fare Rules</button>
+                      </center>
+                      
+                      <div class="fare_desc fare_breakup">
+                        <a href="#">
+                          <table>
+                            <% fare_brk_up.each{|key,value| %>
+                              <%  if value > 0 %>
+                                <tr>
+                                  <td><%=  key %></td>
+                                  <td style="text-align:right;"><b><i class='fa fa-inr' aria-hidden='true'></i> <%= fare_comma_seperator(value) %></b></td>
+                                </tr>
+                              <% end %>
+                            <%  } %>
+                            <tr colspan="2">
+                              <td><hr style="margin:2px;"></td>
+                            </tr>
+                            <tr>
+                              <td><b>Total<b></td>
+                              <td style="text-align:right;"><b>Rs.<%= fare_comma_seperator total_fare.to_i %></b></td>
+                            </tr>
+                          </table>
+                         </a>
+                      </div>
+                      <div style="display:none;" class="fare_desc fare_rule">
+                          <% if ["Sale"].include? fare_cls %>
+                            <a href="">Non Refundable</a>
+                          <% else %>
+                            <% get_cancellation_policy(al_cde).each{ |policies| %>
+                              <a href=""><%= policies.html_safe %></a>
+                            <% } %>              
+                          <% end %>
+                      </div>
+                        
+                    </div>
+                  </div>
+
+              </div>
+            <% } %>
+          <% end %>
+        </div>
+    </div>
+<% } %>

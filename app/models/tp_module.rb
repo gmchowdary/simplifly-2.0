@@ -1,0 +1,2 @@
+class TpModule < ApplicationRecord
+end

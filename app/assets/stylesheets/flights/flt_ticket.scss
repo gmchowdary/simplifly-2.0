@@ -1,0 +1,30 @@
+  .s-s-container{width:1100px;height:auto;background-color:white;padding:10px 25px;float:left;}
+  .s-s-main-header{padding-top:1px;text-align:center;float:left;width:100%;height:30px;border-bottom:1px solid #D3D3D3;}
+  
+  .s-s-data-container{width:100%;height:auto;float:left;padding-bottom:5px;border-bottom:1px solid #D3D3D3;}
+  .s-s-data-container-sm{width:49%;}
+  .s-s-sub-header{color:#4f6a6f;font-weight:bold;}
+  
+  .s-s-table{width:100%;height:auto;font-size:14px;padding-left:50px;}
+  .s-s-table-row{width:100%;height:35px;color:#4f6a6f;}
+  .s-s-table-key{width:250px;height:35px;float:left;}
+  .s-s-table-value{width:350px;height:35px;float:left;}
+
+  .s-s-model{min-width:700px;height:500px;margin-top:200px;y-overflow:scroll;}
+  .s-s-model-close{min-width:700px;height:15px;text-align:right;}
+  
+  .s-s-selected-flt-box{width:400px;height:auto;}
+  .s-s-selected-flt-info{width:70px;height:auto;float:left;padding:8px;}
+  .s-s-selected-flt-from-data{color:#545454;float:left;text-align:right;width:115px;}
+  .s-s-selected-flt-from-to-more-info{color:#545454;float:left;text-align:center;width:100px;}
+  .s-s-selected-flt-to-data{color:#545454;float:left;text-align:left;width:115px;}
+  
+  .s-s-selected-flt-extra-info{width:219px;height:90px;margin-right:2px;float:left;padding:5px 0px 0px 10px;}
+  .s-s-selected-flt-total-price{width:129px;height:90px;margin-top:10px;float:left;padding-top:5px;}
+  .s-s-selected-flt-more-violation-btn{width:90px;height:90px;float:left;cursor:pointer;margin-top:5px;color:red;text-align:center;animation: blinker 1s linear infinite;}
+  @keyframes blinker {50% { opacity: 0; }}
+  .s-s-selected-flt-fixed-services{width:99px;height:90px;margin-top:10px;float:left;padding-top:5px;}
+  .s-s-selected-flt-more-details{width:109px;height:auto;margin-top:5px;float:left;padding-top:5px;padding-left:15px;}
+  .s-s-selected-flt-more-details-btn{cursor:pointer;font-size:13px;color:#428bca;text-decoration:underline;text-align:center;}
+  .s-s-selected-flt-more-violation-text-area-box{width:500px;height:80px;border:1px solid gray;}
+  .s-s-warnings p{color:red;font-style:italic;}

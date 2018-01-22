@@ -1,0 +1,2 @@
+class EmpAttributeValue < ApplicationRecord
+end

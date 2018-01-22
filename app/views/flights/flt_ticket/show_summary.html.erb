@@ -1,0 +1,207 @@
+<% 
+  trip_type = (@flight.keys)[0][0..1]
+  fare = extract_charges_from_fare_obj(@fare)
+  total_fare = get_total(fare)
+  stops = 0
+%>
+<div class="s-s-container">
+<%= form_for :do_ticket , {url: flights_flt_ticket_do_ticket_path(selected_flights: @selected_flt_booking_obj, trip_type: trip_type ) } { |f| %>
+    <div class="s-s-main-header">
+      <h4>Travel Request Review</h4>
+    </div>
+  
+  <% @flight.each{|trip_type,seg_arr| %>
+   <% flt_num,dept_datetime,arr_datetime,origin,dest,stops,via,aircraft,dept_term,arr_term,dur,bag_alw = [],[],[],[],[],-1,[],[],[],[],[],[]
+      seg_arr.each{|seg|
+        flt_num << seg.flt_num
+        dept_datetime << seg.dept_datetime
+        arr_datetime << seg.arr_datetime
+        origin << seg.origin
+        dest << seg.dest
+        stops += 1
+        via << seg.via
+        aircraft << seg.aircraft
+        dept_term << seg.dept_term
+        arr_term << seg.arr_term
+        dur << seg.dur
+        bag_alw << seg.bag_alw
+      }
+    flt_num = flt_num.join("/")
+    al_code = get_airline_code(flt_num)
+    aircraft = "Boeing " + (aircraft.join(" / Boeing "))
+    dept_airport_name = get_airport_name origin[0]
+    arr_airport_name = get_airport_name dest[-1]
+    stops = get_stops_str stops
+    duration = duration_cal( dept_datetime[0] , arr_datetime[-1] )
+    dept_time = get_time_from_date_obj(dept_datetime[0])
+    arr_time = get_time_from_date_obj(arr_datetime[-1])
+   %>
+    
+    <div class="s-s-data-container">
+      <div class="s-s-sub-header" >
+        <span>Flight Information</span>
+      </div>
+      
+      <div class="s-s-table">
+        <div class="s-s-selected-flt-box">
+          <div class="s-s-selected-flt-info">
+            <div>
+              <span>
+                <%=  image_tag(al_code+".jpg", class: "search-flight-info-part-flight-img") %>
+              </span>								
+            </div>
+            <div>
+              <span><%= get_airline_name(al_code) %></span>
+            </div>
+            <div>
+              <small><%= flt_num %></small>
+            </div>
+          </div>
+          <div class="s-s-selected-flt-from-data">
+            <div>
+              <span><small><%= date_fomatter_d_m_dt_y dept_datetime[0] %></small></span>
+            </div>
+            <div>
+              <span><b><%= get_time_from_date_obj dept_datetime[0] %> </b></span>
+              <span><b><%= origin[0] %></b></span>
+            </div>
+            <div>
+              <span><small><%= dept_airport_name %></small>, Terminal-<%=  dept_term[-1] %></span>
+            </div>
+          </div>
+          <div class="s-s-selected-flt-from-to-more-info">
+            <div>
+              <span><%= stops %></span>
+            </div>
+            <div>
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </div>
+            <div>
+              <span><small><%= duration %></small></span>
+            </div>
+          </div>
+          <div class="s-s-selected-flt-to-data">
+            <div>
+              <span><small><%=  date_fomatter_d_m_dt_y arr_datetime[-1] %></small></span>
+            </div>
+            <div>
+                <span><b><%= dest[-1] %></b></span>
+              <span><b><%= get_time_from_date_obj arr_datetime[-1] %></b></span>
+            </div>
+            <div>
+              <span><small><%= arr_airport_name %></small>, Terminal-<%=  arr_term[-1] %></span>
+            </div>
+          </div>
+        </div>
+          
+        
+        <div class="s-s-selected-flt-extra-info">
+          <i class="fa fa-suitcase" aria-hidden="true"></i> <small>Check-in: 15 KG + Cabin: 7 KG</small><br>
+          <i class="fa fa-cutlery" aria-hidden="true"></i><small> Meals included.</small>
+        </div>
+        <div class="s-s-selected-flt-total-price">
+          <center>
+            <h5><i class='fa fa-inr' aria-hidden='true'></i> <%= fare_comma_seperator(total_fare) %></h5> 
+            <div><b class="<%= get_btn_color_class_based(get_fare_class(@fare.fare_cls)) %>" style="padding:3px 4px;border-radius:4px;"><%= get_fare_class(@fare.fare_cls) %></b></div>
+          </center>
+        </div>
+      </div>
+    </div>   
+    
+    <div class="s-s-data-container">
+      <div class="s-s-sub-header" >
+        <span>Add-Ons</span>
+      </div>
+      <div class="s-s-table">
+    
+      </div>
+    </div>
+    
+    <div class="s-s-data-container">
+      <div class="s-s-sub-header" >
+        <span>Policy Deviations</span>
+      </div>
+      <div class="s-s-table">
+        <div class="s-s-warnings">
+          <p>Preffered Carrier: Not Selected</p>
+          <p>Carrier: First Class</p>
+        </div> 
+      </div>
+    </div>
+    
+    <div class="s-s-data-container">
+      <div class="s-s-sub-header" >
+        <span>Your Reasons for Policy Deviations</span>
+      </div>
+      <div class="s-s-table">
+        <%=  params["add_services"]["reason_ow"] %>
+        <%=  params["add_services"]["reason_rto"] %>
+        <%=  params["add_services"]["reason_rtr"] %>
+      </div>
+    </div>
+    
+<%  } %>
+    
+    <div class="s-s-data-container">
+      <div class="s-s-sub-header" >
+        <span>Fare Summary</span>
+      </div>
+      <div class="s-s-table">
+      <% fare.each{|key,value| %>
+        <% unless value == 0 %>
+          <div class="s-s-table-row">
+            <div class="s-s-table-key"><%=  key %></div>
+            <div class="s-s-table-value"><b>: <%= value  %></b></div>
+          </div>
+        <% end %>
+      <% } %>
+        <hr/>
+        <div class="s-s-table-row">
+          <div class="s-s-table-key">Total Fare</div>
+          <div class="s-s-table-value"><b>: <%= total_fare %></b></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="s-s-data-container">
+      <div class="s-s-sub-header" >
+        <span>Approver Information</span>
+      </div>
+      <div class="s-s-table">
+        <div class="s-s-table-row">
+          <div class="s-s-table-key">Approver</div>
+          <div class="s-s-table-value"><b>: <%= @added_services %></b></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="s-s-data-container">
+      <div class="s-s-sub-header" >
+        <span>Passenger Information</span>
+      </div>
+      <div class="s-s-table">
+        <div class="s-s-table-row">
+          <div class="s-s-table-key">Name</div>
+          <div class="s-s-table-value"><b>: <%= "#{@response.title}. #{@response.first_name} #{@response.middle_name} #{@response.last_name}" %></b></div>
+        </div>
+        <div class="s-s-table-row">
+          <div class="s-s-table-key">Gender</div>
+          <div class="s-s-table-value"><b>: <%= @response.gender == "M" ? "Male" : "Female" %></b></div>
+        </div>
+        <div class="s-s-table-row">
+          <div class="s-s-table-key">Email</div>
+          <div class="s-s-table-value"><b>: <%= @response.email %></b></div>
+        </div>
+        <div class="s-s-table-row">
+          <div class="s-s-table-key">Phone</div>
+          <div class="s-s-table-value"><b>: <%= @response.phone_number %></b></div>
+        </div>
+      </div>
+    </div>
+    <div class="s-s-data-container">
+      <center>
+        <%= f.submit "Book Now", class:"btn btn-sm btn-success" %>
+      </center>
+    </div>
+<% } %>    
+</div>

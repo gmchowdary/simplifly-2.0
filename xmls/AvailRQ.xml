@@ -1,0 +1,6 @@
+<flights_avail_search_rq><call_id>SIM_1234567890</call_id><bkg_ngn_360_api_user><user_id>SIMPLIFLY</user_id><password>$im91i41Y</password><is_pw_encr>no</is_pw_encr></bkg_ngn_360_api_user><airlines><!--airline><code>6E</code><corp_id>1</corp_id><vendor_id>1</vendor_id><vdr_sup_prov_id>2</vdr_sup_prov_id><login_types>RETAIL</login_types></airline--><airline><code>G8</code><corp_id>1</corp_id><vendor_id>1</vendor_id><vdr_sup_prov_id>3</vdr_sup_prov_id><login_types>RETAIL</login_types></airline></airlines><onward_sector><origin>DEL</origin><dest>HYD</dest><dept_date>2017-12-20 00:00</dept_date></onward_sector><return_sector><origin>HYD</origin><dest>DEL</dest><dept_date>2017-12-26 00:00</dept_date></return_sector><pax><adt>1</adt><chd>0</chd><inf>0</inf></pax><return_with_desc><fare_name>true</fare_name><aircraft_name>true</aircraft_name><airport_name>true</airport_name><airport_city_name>true</airport_city_name><charge_name>true</charge_name><cabin_cls_name>true</cabin_cls_name></return_with_desc></flights_avail_search_rq>
+
+
+
+
+

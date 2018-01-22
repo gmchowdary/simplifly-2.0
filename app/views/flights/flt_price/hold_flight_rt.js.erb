@@ -1,0 +1,24 @@
+if( $('.search-description').is(':empty') ){
+  $(".search-description").html("<%= escape_javascript(render("rt_flight_selection_holder")) %>");  
+}
+$(".search-description-price-<%=@trip_type%>").html("<%= escape_javascript(render("rt_flight_fq")) %>");
+$(".search-description-body-rt").removeClass("display-none");
+
+<% @trip_type = "rto" if @trip_type == "rt-f" %>
+<% @trip_type = "rtr" if @trip_type == "rt-b" %>
+$("#complete_booking_<%=  @trip_type %>").prop("checked",true);
+<% h = {'segs' => @segment ,'fare' => @fare.to_h, 'trip_type' => @trip_type[0..1] }.to_json  %>
+$("#complete_booking_<%=  @trip_type %>").val('<%= h.html_safe %>');
+
+
+if( $("#complete_booking_rtr").is(":checked") && $("#complete_booking_rtr").is(":checked")   ) {
+  $.ajax({
+      url: "/flights/flt_price/get_flight_price_rt",
+      type: 'GET',
+      dataType: 'script',
+      data: {
+        rto: $("#complete_booking_rto").val(),
+        rtr: $("#complete_booking_rtr").val()
+      }
+  })
+ }

@@ -1,0 +1,67 @@
+<script type="text/javascript" src="/assets/flights/flt_index.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $( ".serach-date-rtn" ).datepicker({
+      minDate: new Date("<%=  DateTime.now.year %>","<%=  DateTime.now.month-1 %>","<%=  DateTime.now.day %>"),
+      dateFormat: "yy-mm-dd"
+    });
+    $( ".serach-date-onw" ).datepicker({
+      minDate: new Date("<%=  DateTime.now.year %>","<%=  DateTime.now.month-1 %>","<%=  DateTime.now.day %>"),
+      dateFormat: "yy-mm-dd"
+    });
+  });
+</script>
+<div class="flight-search">
+  <%
+    unless @qry_str_hash.nil? 
+      if @qry_str_hash['trip_type'] == "ow"
+        style_ow = "btn-activated"
+        style_rt = nil
+      else
+        style_ow = nil
+        style_rt = "btn-activated"
+      end
+      from = @qry_str_hash['from']
+      to = @qry_str_hash['to']
+      date_of_journey_onward = @qry_str_hash["date_of_journey_onward"]
+      date_of_journey_return = @qry_str_hash["date_of_journey_return"]
+      jrny_class = @qry_str_hash["class"]
+    else
+      style_ow = "btn-activated"
+      style_rt = nil
+      jrny_class = "Economy"
+    end
+  %>
+  
+  
+  <%= form_for :search_flight, url: flights_flt_avail_search_flights_path, method: :get, html: {class: "flight-search-form"} do |f| %>
+    <div class="btn flight-search-form-trip" data-toggle="buttons"  >
+      <label class="btn btn-sm btn-border btn-ow <%= style_ow %>" onclick='radio_button_switch("btn-ow","btn-rt");' >
+        <%= f.radio_button :trip_type, 'ow', :checked => !style_ow.nil? %>One Way
+      </label>
+      <label class="btn btn-sm btn-border btn-rt <%= style_rt %>" onclick='radio_button_switch("btn-rt","btn-ow");'>
+        <%= f.radio_button :trip_type, 'rt', :checked => !style_rt.nil? %> Round Trip
+      </label>
+    </div>
+    <br/>
+    <center>
+      <div class="flight-search-inputs">
+        <%= f.text_field :from, value: from, class: "search-airport-auto",list: "searchList",onchange: "set_serach_places('search_flight_from');",onchange: "validate_place()", placeholder: "From...",required: true %><i class="fa fa-exchange search-flight-icons search-flight-icons-border-left " aria-hidden="true"></i>
+        <%= f.text_field :to,value: to, class: "search-airport-auto",list: "searchList",onchange: "set_serach_places('search_flight_to');",onchange: "validate_place()", placeholder: "To...",required: true %>
+          <datalist id="searchList">
+            <%  view_airports.each{ |val| %>
+              <option value="<%= val %>"></option>
+            <% } %>
+          </datalist>
+        <%= f.text_field :date_of_journey_onward,value: date_of_journey_onward, placeholder: "&#xf073;&nbsp;&nbsp;Onward...".html_safe,class: "serach-date-onw", onchange: "validate_date()",required: true %>
+        <%= f.text_field :date_of_journey_return,value: date_of_journey_return, placeholder: "&#xf073;&nbsp;&nbsp;Return...".html_safe,class: "serach-date-rtn", onchange: "validate_date()",required: true, disabled: style_rt.nil? %>
+        <%= f.select :class, options_for_select([ "Economy", "Business","First" ], jrny_class) %>
+        <%= f.submit "Search" ,class: "btn btn-success" %>
+      </div>
+    </center>
+ <% end %>
+</div>
+

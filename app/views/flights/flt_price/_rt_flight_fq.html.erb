@@ -1,0 +1,89 @@
+<%   
+  fare = extract_charges_from_fare_obj(@fare)
+  total_fare = get_total(fare)
+  stops = 0
+%>
+<% 
+puts "++++++++++++++++++++++++++++++++++++++++++++"
+puts @segment = [ @segment ] unless @segment.class == Array %>
+<% flt_num,dept_datetime,arr_datetime,origin,dest,stops,via,aircraft,dept_term,arr_term,dur,bag_alw = [],[],[],[],[],-1,[],[],[],[],[],[]
+    @segment.each{ |seg|
+      seg = seg.table
+      flt_num << seg.flt_num
+      dept_datetime << seg.dept_datetime
+      arr_datetime << seg.arr_datetime
+      origin << seg.origin
+      dest << seg.dest
+      stops += 1
+      via << seg.via
+      aircraft << seg.aircraft
+      dept_term << seg.dept_term
+      arr_term << seg.arr_term
+      dur << seg.dur
+      bag_alw << seg.bag_alw
+    }
+    flt_num = flt_num.join("/")
+    al_code = get_airline_code(flt_num)
+    aircraft = "Boeing " + (aircraft.join(" / Boeing "))
+    dept_airport_name = get_airport_name origin[0]
+    arr_airport_name = get_airport_name dest[-1]
+    stops = get_stops_str stops
+    duration = duration_cal( dept_datetime[0] , arr_datetime[-1] )
+    dept_time = get_time_from_date_obj(dept_datetime[0])
+    arr_time = get_time_from_date_obj(arr_datetime[-1])
+%>
+
+<div>
+  <center>
+    <div class="search-description-flight-rt">
+      <div>
+        <span>
+          <%=  image_tag(al_code+".jpg", class: "search-flight-info-part-flight-img") %>
+        </span>								
+      </div>
+      <div>
+        <span><%= get_airline_name(al_code) %></span>
+      </div>
+      <div>
+        <small><%= flt_num %></small>
+      </div>
+    </div>
+    <div class="search-description-from-data">
+      <div>
+        <span><small><%= date_fomatter_d_m_dt_y dept_datetime[0] %></small></span>
+      </div>
+      <div>
+        <span><b><%= get_time_from_date_obj dept_datetime[0] %> </b></span>
+        <span><b><%= origin[0] %></b></span>
+      </div>
+      <div>
+        <span><small><%= dept_airport_name %></small>, Terminal-<%=  dept_term[0] %></span>
+      </div>
+    </div>
+    <div class="search-description-from-to-more-info">
+      <center>
+      <div>
+        <span><%= stops == 0 ? "Non-Stop" : pluralize(stops, 'Stop') %></span>
+      </div>
+        <div>
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+        </div>
+        <div>
+          <span><small><%= duration %></small></span>
+        </div>
+      </center>
+    </div>
+    <div class="search-description-to-data">
+      <div>
+        <span><small><%=  date_fomatter_d_m_dt_y arr_datetime[-1] %></small></span>
+      </div>
+      <div>
+        <span><b><%= dest[-1] %></b></span>
+        <span><b><%= get_time_from_date_obj arr_datetime[-1] %></b></span>
+      </div>
+      <div>
+        <span><small><%= arr_airport_name %></small>, Terminal-<%=  arr_term[0] %></span>
+      </div>
+    </div>
+  </center>
+</div>

@@ -1,0 +1,88 @@
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><b>SimplyFly</b></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+          <li color="white">
+            <%= link_to('<i class="fa fa-sign-out" aria-hidden="true" ></i> Logout '.html_safe, destroy_user_session_path, method: :delete) %>
+          </li>
+        <% else %>
+          <li><p class="navbar-text">Already have an account?</p></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+              <ul id="login-dp" class="dropdown-menu">
+                <li>
+                  <div class="row">
+                    <div class="col-md-12">
+                      Login In
+                      <%= form_for(:user, :url => session_path(:user)) do |f| %>
+                      <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                         <div class="form-group">
+                             <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                             <%= f.text_field :email, class: "form-control", id: "exampleInputEmail2", placeholder: "Email address", required: true %>
+                         </div>
+                         <div class="form-group">
+                           <label class="sr-only" for="exampleInputPassword2">Password</label>
+                           <%= f.password_field :password, class: "form-control", id: "exampleInputPassword2", placeholder: "Password", required: true %>
+                         </div>
+                         <div class="form-group">
+                            <%= f.submit 'Sign in', class: "btn btn-primary btn-block" %>
+                         </div>
+                         <div class="help-block text-left">
+                            <%= link_to "Forgot your password?", new_password_path(:user) %>
+                         </div>
+                         <div class="checkbox">
+                           <label>
+                             <%= f.check_box :remember_me %> keep me logged-in
+                           </label>
+                         </div>
+                      </form>
+                    </div>
+                    <% end %>
+                    <div class="bottom text-center">
+                      New here ? <b><%= link_to "Join Us", new_user_registration_path %></b><br />
+                      <a href="#"></a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+          </li>
+        <% end %>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

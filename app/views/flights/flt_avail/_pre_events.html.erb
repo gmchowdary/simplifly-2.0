@@ -1,0 +1,321 @@
+<div class="event-box event-box-pre">
+    <div class="event-box-header">Pre-Approved Journey</div>
+    <div class="event-box-event-desc">
+      <div class="event-box-event-desc-box">
+          <div class="event-box-event-desc-box-header">You have a pre-approved journey in your calendar.</div>
+          <table>
+            <tr><td><b>Event </b></td><td>: </td><td>Annual Sales Review Meeting</td></tr>
+            <tr><td><b>Place </b></td><td>: </td><td>Delhi (DEL)</td></tr>
+            <tr><td><b>Date of Event </b></td><td>: </td><td><%= (DateTime.now + 5).strftime('%^b-%d-%Y') %></td></tr>
+            <tr><td><b>Time of Event </b></td><td>: </td><td><%= (DateTime.now + 5).strftime('%H:%M') %></td></tr>
+          </table>
+      </div>
+      <div class="event-flt-box">
+          <table style="margin:50px; 10px;">
+            <tr>
+              <td><b>Search from </b></td>
+              <td> : </td>
+              <td>
+                <%= text_field_tag "From", "Ahmedabad (AMD)", class: "search-airport-auto",list: "searchList",onchange: "set_serach_places('search_flight_to');",onchange: "validate_place()", placeholder: "From...",required: true %>
+                <datalist id="searchList">
+                  <%  view_airports.each{ |val| %>
+                    <option value="<%= val %>"></option>
+                  <% } %>
+                </datalist>
+              </td>
+            </tr>
+          </table>
+      </div>
+      <div class="event-box-submit-box">
+        <center>
+          <div><%= link_to "search", flights_flt_avail_search_flights_path("search_flight" => { "trip_type" => "ow" ,"to" =>  "Delhi (DEL)","from" => "Ahmedabad (AMD)", "date_of_journey_onward"=> (DateTime.now + 5).strftime('%Y-%m-%d'), "class"=>"Economy"}), {class: "btn btn-sm btn-info"} %></div>
+          <span><h2><i class="fa fa-check-circle event-box-approved" aria-hidden="true"></i></h2>Approved</span>
+        </center>
+      </div>
+    </div>
+    <div class="event-tips">
+        <div class="event-tips-head">Tips:</div>
+        <div class="event-tips-body">We suggest you to choose the flight that can reach 2 hours before the event based on the city condition.</div>
+        <div class="event-tips-body">We have highlighted Some of the flights which are best suitable for your journey.</div>
+    </div>
+</div>
+
+
+<div class="event-box event-box-pre">
+<% fare = @ow_trp_fares.fares.fare %>
+<% seg = @ow_trp_segments.segs.seg %>
+<% flt_num,dept_datetime,arr_datetime,origin,dest,stops,via,aircraft,dept_term,arr_term,dur,bag_alw = [],[],[],[],[],-1,[],[],[],[],[],[]
+      seg.each{ |seg|
+        flt_num << seg.flt_num
+        dept_datetime << seg.dept_datetime
+        arr_datetime << seg.arr_datetime
+        origin << seg.origin
+        dest << seg.dest
+        stops += 1
+        via << seg.via
+        aircraft << seg.aircraft
+        dept_term << seg.dept_term
+        arr_term << seg.arr_term
+        dur << seg.dur
+        bag_alw << seg.bag_alw
+      }
+      flt_num = flt_num.join(" / ")
+      al_code = get_airline_code(flt_num)
+      aircraft = "Boeing " + (aircraft.join(" / Boeing "))
+      dept_airport_name = get_airport_name origin[0]
+      arr_airport_name = get_airport_name dest[-1]
+      city_name = get_airport_city dest[-1]
+      stops = get_stops_str stops
+      duration = duration_cal( dept_datetime[0] , arr_datetime[-1] )
+      dept_time = get_time_from_date_obj(dept_datetime[0])
+      arr_time = get_time_from_date_obj(arr_datetime[-1])
+%>
+<%
+ fare_brk_up = extract_charges_from_fare_obj(fare)
+ total_fare = get_total(fare_brk_up)
+ cabin_cls_name = fare.cabin_cls_name
+ fb_code = fare.fb_code
+ al_cde = get_airline_code(flt_num)
+ fare_cls = get_fare_class(fare.fare_cls)
+ seats = fare.seats
+ button_style = get_btn_color_class_based(fare_cls)
+%>
+  <div class="event-box-header">Your Booking Status (<%= date_fomatter_d_m_dt_y dept_datetime[0].to_s %>)</div>
+  <div class="event-box-event-desc">
+    <div class="event-box-event-desc-box">
+        <div class="event-box-event-desc-box-header">Know the status of your booking.</div>
+        <table>
+          <tr><td><b>Event </b></td><td>: </td><td>Annual Sales Review Meeting</td></tr>
+          <tr><td><b>Place </b></td><td>: </td><td><%= city_name %></td></tr>
+          <tr><td><b>Date of Event </b></td><td>: </td><td><%= date_fomatter_d_m_dt_y dept_datetime[0].to_s %></td></tr>
+          <tr><td><b>Time of Event </b></td><td>: </td><td><%= (DateTime.strptime(arr_time,"%H:%M")+ 2.hours).strftime("%H:%M") %></td></tr>
+        </table>
+    </div>
+
+    <div class="event-flt-box">
+      <div class="event-partner">
+          <h3>
+              <div class="event-status-circle-box">
+                  Booked
+                  <i class="fa fa-circle" aria-hidden="true"></i>
+              </div>
+              <div class="event-status-arrow-box">
+                  <h3><i class="fa fa-long-arrow-right" aria-hidden="true"></i></h3>
+              </div>
+              <div class="event-status-circle-box">
+                  Reviewed
+                  <i class="fa fa-circle" aria-hidden="true"></i>
+              </div>
+              <div class="event-status-arrow-box">
+                  <h3><i class="fa fa-long-arrow-right" aria-hidden="true"></i></h3>
+              </div>
+              <div class="event-status-circle-box">
+                  Approved
+                  <i class="fa fa-circle" aria-hidden="true"></i>
+              </div>
+              <div class="event-status-arrow-box">
+                  <h3><i class="fa fa-long-arrow-right" aria-hidden="true"></i></h3>
+              </div>
+              <div class="event-status-circle-box">
+                  Payment
+                  <i class="fa fa-circle-o" aria-hidden="true"></i>
+              </div>
+              <div class="event-status-arrow-box">
+                  <h3><i class="fa fa-long-arrow-right" aria-hidden="true"></i></h3>
+              </div>
+              <div class="event-status-circle-box">
+                  Departure
+                  <i class="fa fa-circle-o" aria-hidden="true"></i>
+              </div>
+      </div>
+      <div class="event-flt-info">
+        <div>
+          <span>
+            <%=  image_tag(al_code+".jpg", class: "search-flight-info-part-flight-img") %>
+          </span>								
+        </div>
+        <div>
+          <span><%= get_airline_name(al_code) %></span>
+        </div>
+        <div>
+          <small><%= flt_num %></small>
+        </div>
+      </div>
+      <div class="event-flt-from-data">
+        <div>
+          <span><small><%= date_fomatter_d_m_dt_y dept_datetime[0].to_s %></small></span>
+        </div>
+        <div>
+          <span><b><%= get_time_from_date_obj dept_datetime[0].to_s %> </b></span>
+          <span><b><%= origin[0] %></b></span>
+        </div>
+        <div>
+          <span><small><%= dept_airport_name %></small>, Terminal-<%=  dept_term[0] %></span>
+        </div>
+      </div>
+      <div class="event-flt-from-to-more-info">
+        <div>
+          <span><%= stops %></span>
+        </div>
+        <div>
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+        </div>
+        <div>
+          <span><small><%= duration %></small></span>
+        </div>
+      </div>
+      <div class="event-flt-to-data">
+        <div>
+          <span><small><%=  date_fomatter_d_m_dt_y arr_datetime[-1].to_s %></small></span>
+        </div>
+        <div>
+            <span><b><%= dest[0] %></b></span>
+          <span><b><%= get_time_from_date_obj arr_datetime[-1].to_s %></b></span>
+        </div>
+        <div>
+          <span><small><%=  arr_airport_name %></small>, Terminal-<%=  arr_term[-1] %></span>
+        </div>
+      </div>
+      <div class="event-flt-total-price">
+        <center>
+          <h5><i class='fa fa-inr' aria-hidden='true'></i> <%= fare_comma_seperator(total_fare) %></h5> 
+          <div><b class="<%= button_style %>"><%= fare_cls %></b></div>
+        </center>
+      </div>
+    </div>     
+    <div class="event-box-submit-box">
+      <center>
+        <div><%= link_to "Continue", flights_flt_ssr_add_services_path('complete_booking' => { 'ow' => @json_response},"demo_run" => true), {class: "btn btn-sm btn-info"} %></div>
+        <span><h2><i class="fa fa-check-circle event-box-approved" aria-hidden="true"></i></h2>Approved</span>
+      </center>
+    </div>
+  </div>
+    <div class="event-tips">
+        <div class="event-tips-head">Tips:</div>
+        <div class="event-tips-body">We suggest to reach the airport before 2 hours based city condition.</div>
+        <div class="event-tips-body">We have the best deals on hotels and cabs check them by clicking status.</div>
+    </div>
+</div>
+
+
+<div class="event-box event-box-pre">
+<% fare = @ow_trp_fares.fares.fare %>
+<% seg = @ow_trp_segments.segs.seg %>
+<% flt_num,dept_datetime,arr_datetime,origin,dest,stops,via,aircraft,dept_term,arr_term,dur,bag_alw = [],[],[],[],[],-1,[],[],[],[],[],[]
+      seg.each{ |seg|
+        flt_num << seg.flt_num
+        dept_datetime << seg.dept_datetime
+        arr_datetime << seg.arr_datetime
+        origin << seg.origin
+        dest << seg.dest
+        stops += 1
+        via << seg.via
+        aircraft << seg.aircraft
+        dept_term << seg.dept_term
+        arr_term << seg.arr_term
+        dur << seg.dur
+        bag_alw << seg.bag_alw
+      }
+      flt_num = flt_num.join(" / ")
+      al_code = get_airline_code(flt_num)
+      aircraft = "Boeing " + (aircraft.join(" / Boeing "))
+      dept_airport_name = get_airport_name origin[0]
+      arr_airport_name = get_airport_name dest[-1]
+      city_name = get_airport_city dest[-1]
+      stops = get_stops_str stops
+      duration = duration_cal( dept_datetime[0] , arr_datetime[-1] )
+      dept_time = get_time_from_date_obj(dept_datetime[0])
+      arr_time = get_time_from_date_obj(arr_datetime[-1])
+%>
+<%
+ fare_brk_up = extract_charges_from_fare_obj(fare)
+ total_fare = get_total(fare_brk_up)
+ cabin_cls_name = fare.cabin_cls_name
+ fb_code = fare.fb_code
+ al_cde = get_airline_code(flt_num)
+ fare_cls = get_fare_class(fare.fare_cls)
+ seats = fare.seats
+ button_style = get_btn_color_class_based(fare_cls)
+%>
+  <div class="event-box-header">Event calendar (<%= date_fomatter_d_m_dt_y dept_datetime[0].to_s %>)</div>
+  <div class="event-box-event-desc">
+    <div class="event-box-event-desc-box">
+        <div class="event-box-event-desc-box-header">You have a meeting in your calendar.</div>
+        <table>
+          <tr><td><b>Event </b></td><td>: </td><td>XYZ Corporation Customer Demo</td></tr>
+          <tr><td><b>Place </b></td><td>: </td><td><%= city_name %></td></tr>
+          <tr><td><b>Date of Event </b></td><td>: </td><td><%= date_fomatter_d_m_dt_y dept_datetime[0].to_s %></td></tr>
+          <tr><td><b>Time of Event </b></td><td>: </td><td><%= (DateTime.strptime(arr_time,"%H:%M")+ 2.hours).strftime("%H:%M") %></td></tr>
+        </table>
+    </div>
+
+    <div class="event-flt-box">
+      <div class="event-partner">Flight chosen by your colleague <b>Mr. Chendra Kishore Reddy</b> click continue to choose same flight.</div>
+      <div class="event-flt-info">
+        <div>
+          <span>
+            <%=  image_tag(al_code+".jpg", class: "search-flight-info-part-flight-img") %>
+          </span>								
+        </div>
+        <div>
+          <span><%= get_airline_name(al_code) %></span>
+        </div>
+        <div>
+          <small><%= flt_num %></small>
+        </div>
+      </div>
+      <div class="event-flt-from-data">
+        <div>
+          <span><small><%= date_fomatter_d_m_dt_y dept_datetime[0].to_s %></small></span>
+        </div>
+        <div>
+          <span><b><%= get_time_from_date_obj dept_datetime[0].to_s %> </b></span>
+          <span><b><%= origin[0] %></b></span>
+        </div>
+        <div>
+          <span><small><%= dept_airport_name %></small>, Terminal-<%=  dept_term[0] %></span>
+        </div>
+      </div>
+      <div class="event-flt-from-to-more-info">
+        <div>
+          <span><%= stops %></span>
+        </div>
+        <div>
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+        </div>
+        <div>
+          <span><small><%= duration %></small></span>
+        </div>
+      </div>
+      <div class="event-flt-to-data">
+        <div>
+          <span><small><%=  date_fomatter_d_m_dt_y arr_datetime[-1].to_s %></small></span>
+        </div>
+        <div>
+            <span><b><%= dest[0] %></b></span>
+          <span><b><%= get_time_from_date_obj arr_datetime[-1].to_s %></b></span>
+        </div>
+        <div>
+          <span><small><%=  arr_airport_name %></small>, Terminal-<%=  arr_term[-1] %></span>
+        </div>
+      </div>
+      <div class="event-flt-total-price">
+        <center>
+          <h5><i class='fa fa-inr' aria-hidden='true'></i> <%= fare_comma_seperator(fare_brk_up["Base Fare"]) %></h5> 
+          <div><b class="<%= button_style %>"><%= fare_cls %></b></div>
+        </center>
+      </div>
+    </div>     
+    <div class="event-box-submit-box">
+      <center>
+        <%  %>
+        <div><%= link_to "Continue", flights_flt_ssr_add_services_path('complete_booking' => { 'ow' => @json_response},"demo_run" => true), {class: "btn btn-sm btn-info"} %></div>
+      </center>
+    </div>
+  </div>
+  <div class="event-tips">
+    <div class="event-tips-head">Suggestion: </div>
+    <div class="event-tips-body">We suggest you to choose the same flight it matches the requirements.</div>
+    <div class="event-tips-body">If you want to choose another flight please search for the flight.</div>
+  </div>
+</div>

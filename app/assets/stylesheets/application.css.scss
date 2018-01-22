@@ -1,0 +1,229 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+@import "daterangepicker";
+  body{
+    background:transparent;
+    background-image: url(/assets/clouds.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size:1500px 900px;
+  }
+
+  .float-left{
+    float: left;
+  }
+  .float-right{
+    float: right;
+  }
+  .display-none{
+      display:none;
+  }
+
+  .width-100{width:100%;}
+  .color-gray{color:gray;}
+  .content-body{
+    margin-top:70px;
+    min-height:1000px;
+  }
+  .footer{
+    float:left;
+    margin: 0px;
+    margin-top: 10px;
+    background:orange;
+    width:100%;
+    height:300px;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  border-right{
+    border-right:1px solid #bdbdbd;
+  }
+  button{
+    border: none;
+  }
+  button a:link, a:visited, a:hover, a:active {
+    color: white;
+  }
+  
+input[disabled]{ background:rgba(189,189,189,0.2) !important;border:1px solid gray !important; }
+  
+.close-dev-button{float:right;cursor:pointer;padding:3px 2px 0px 2px;}
+  
+.top-nav{width:100%;height:60px;background-color:lightblue;z-index:10;position:fixed;top:0px;}
+////////////////////////////  
+.search-description-box{
+  
+}
+.search-description{
+
+}
+.search-description-a-d{
+  font-size: 18px;
+}
+.search-description-date{
+  font-size: 15px;
+  font-weight:thin;
+  color:gray;
+}
+.journey-description-fare{
+  
+}
+
+.text-align-center{text-align:center;}
+
+
+
+
+
+
+
+
+.dropdown-fare-aligment-right{
+    right:0;
+    margin-top: 44px;
+    min-width: 220px;
+}
+.dropdown-fare-aligment-left{
+    left:0;
+    margin-top: 44px;
+    min-width: 220px;    
+}
+.dropdown-al-aligment-left{
+    left:0;
+    min-width: 200px;
+}
+
+
+.dropdown {
+    position: relative;
+    display:inline-block;
+}
+
+.dropdown-content {
+    padding:10px 28px;
+    right:0px;
+    border:1px solid gray;
+    font-size: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    font-size: 10px;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown b{
+    color:gray;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+
+  .color-code{
+    width:15px;
+    height:15px;
+  }
+  .color-code-best-suit{
+    color:white;
+    background: #5cb85c;
+  }
+  .color-code-suit{
+    color:white;
+    background: #428bca;
+  }
+  .color-code-not-suit{
+    color:white;
+    background: #d9534f;
+  }
+  .color-code-preffered{
+    color:white;
+    background:#cc8400;
+  }
+  
+  
+  
+//Navbar
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}

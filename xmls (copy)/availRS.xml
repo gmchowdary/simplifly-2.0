@@ -1,0 +1,149 @@
+<hash>
+   <flights-avail-search-rs>
+      <onward-sector>
+         <flt>
+            <segs>
+               <seg>
+                  <flt-num>G8 422</flt-num>
+                  <dept-datetime>2017-12-20T19:55:00.000Z</dept-datetime>
+                  <arr-datetime>2017-12-20T22:05:00.000Z</arr-datetime>
+                  <origin>DEL</origin>
+                  <dest>HYD</dest>
+                  <stops>0</stops>
+                  <via nil="true"/>
+                  <aircraft>320</aircraft>
+                  <dept-term>1D</dept-term>
+                  <arr-term nil="true"/>
+                  <dur nil="true"/>
+                  <bag-alw>15K</bag-alw>
+               </seg>
+            </segs>
+            <fares>
+               <fare type="array">
+                  <fare>
+                     <vdr-sup-prov-login-id>5</vdr-sup-prov-login-id>
+                     <base>10000.0000</base>
+                     <charge-yq nil="true"/>
+                     <charge-yr nil="true"/>
+                     <charge-psf nil="true"/>
+                     <charge-udf nil="true"/>
+                     <charge-jn nil="true"/>
+                     <charge-ot nil="true"/>
+                     <charge-sbc nil="true"/>
+                     <charge-kkc nil="true"/>
+                     <charge-xxx nil="true"/>
+                     <cabin-cls>Y</cabin-cls>
+                     <cabin-cls-name>Economy</cabin-cls-name>
+                     <fb-code>0~A~~G8~AO9RBINX~0001~~0~6~~X</fb-code>
+                     <fare-cls>A:GS</fare-cls>
+                     <seats>60</seats>
+                  </fare>
+                  <fare>
+                     <vdr-sup-prov-login-id>5</vdr-sup-prov-login-id>
+                     <base>13674.0000</base>
+                     <charge-yq nil="true"/>
+                     <charge-yr nil="true"/>
+                     <charge-psf nil="true"/>
+                     <charge-udf nil="true"/>
+                     <charge-jn nil="true"/>
+                     <charge-ot nil="true"/>
+                     <charge-sbc nil="true"/>
+                     <charge-kkc nil="true"/>
+                     <charge-xxx nil="true"/>
+                     <cabin-cls>Y</cabin-cls>
+                     <cabin-cls-name>Economy</cabin-cls-name>
+                     <fb-code>0~C~~G8~CO9REINX~0001~~0~1~~X</fb-code>
+                     <fare-cls>C:GB</fare-cls>
+                     <seats>4</seats>
+                  </fare>
+               </fare>
+            </fares>
+         </flt>
+      </onward-sector>
+      <return-sector>
+         <flt>
+            <segs>
+               <seg>
+                  <flt-num>G8 421</flt-num>
+                  <dept-datetime>2017-12-26T05:35:00.000Z</dept-datetime>
+                  <arr-datetime>2017-12-26T07:45:00.000Z</arr-datetime>
+                  <origin>HYD</origin>
+                  <dest>DEL</dest>
+                  <stops>0</stops>
+                  <via nil="true"/>
+                  <aircraft>320</aircraft>
+                  <dept-term nil="true"/>
+                  <arr-term>1D</arr-term>
+                  <dur nil="true"/>
+                  <bag-alw>15K</bag-alw>
+               </seg>
+            </segs>
+            <fares>
+               <fare type="array">
+                  <fare>
+                     <vdr-sup-prov-login-id>5</vdr-sup-prov-login-id>
+                     <base>9836.0000</base>
+                     <charge-yq nil="true"/>
+                     <charge-yr nil="true"/>
+                     <charge-psf nil="true"/>
+                     <charge-udf nil="true"/>
+                     <charge-jn nil="true"/>
+                     <charge-ot nil="true"/>
+                     <charge-sbc nil="true"/>
+                     <charge-kkc nil="true"/>
+                     <charge-xxx nil="true"/>
+                     <cabin-cls>Y</cabin-cls>
+                     <cabin-cls-name>Economy</cabin-cls-name>
+                     <fb-code>0~A~~G8~AO9RBINX~0001~~0~1~~X</fb-code>
+                     <fare-cls>A:GS</fare-cls>
+                     <seats>60</seats>
+                  </fare>
+                  <fare>
+                     <vdr-sup-prov-login-id>5</vdr-sup-prov-login-id>
+                     <base>13227.0000</base>
+                     <charge-yq nil="true"/>
+                     <charge-yr nil="true"/>
+                     <charge-psf nil="true"/>
+                     <charge-udf nil="true"/>
+                     <charge-jn nil="true"/>
+                     <charge-ot nil="true"/>
+                     <charge-sbc nil="true"/>
+                     <charge-kkc nil="true"/>
+                     <charge-xxx nil="true"/>
+                     <cabin-cls>Y</cabin-cls>
+                     <cabin-cls-name>Economy</cabin-cls-name>
+                     <fb-code>0~C~~G8~CO9REINX~0001~~0~2~~X</fb-code>
+                     <fare-cls>C:GB</fare-cls>
+                     <seats>4</seats>
+                  </fare>
+               </fare>
+            </fares>
+         </flt>
+      </return-sector>
+      <status>success</status>
+      <call-id>SIM_1234567890</call-id>
+      <ap-names>
+         <app type="array">
+            <app>DEL - New Delhi</app>
+            <app>HYD - Hyderabad</app>
+         </app>
+      </ap-names>
+      <rq>
+         <onward-sector type="array">
+            <onward-sector>
+               <origin>DEL</origin>
+               <dest>HYD</dest>
+               <dept-date>2017-12-20 00:00</dept-date>
+            </onward-sector>
+         </onward-sector>
+         <return-sector type="array">
+            <return-sector>
+               <origin>HYD</origin>
+               <dest>DEL</dest>
+               <dept-date>2017-12-26 00:00</dept-date>
+            </return-sector>
+         </return-sector>
+      </rq>
+      <remark/>
+   </flights-avail-search-rs>
+</hash>

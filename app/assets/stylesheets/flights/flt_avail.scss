@@ -1,0 +1,363 @@
+// Place all the styles related to the flights/flt_avail controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+  
+  
+  ////////////////// Search Form
+  .flight-search-form input[type="text"], select,input[type="date"] {
+    border: 0;
+    outline: 0;
+    width:180px;
+    height:30px;
+    background:white;
+    color: gray;
+    border-left: 1px solid gray;
+    float:left;
+    padding:5px 10px;
+  }
+  .flight-search-form input[type="submit"]{
+    float:left;
+    padding:5px 10px;
+    width:100px;
+    height:30px;
+    border-radius: 0px;
+  }
+  .flight-search{
+    color: white;
+  }
+  .flight-search-form{
+   padding-top:15px;
+   width:1110px;
+   opacity:1.0;
+   background-color:rgba(0, 0, 0, 0.7);
+   height:140px;
+   box-shadow: 5px 5px 5px #888888;
+  }
+  
+  .flight-search-inputs{
+    margin-left:40px;
+  }
+  .flight-search-form-trip{
+    margin-left:30px;
+  }
+  .flight-search-add-passenger{
+    width:120px;
+  }
+  .flight-search-date-picker{
+    padding: 1px 5px;
+      width:185px;
+  }
+  .btn-activated{
+    background: green;
+  }
+    .search-flight-icons{
+    float:left;
+    font-size:20px;
+    color:black;
+    background: white;
+    padding:1px;
+    width:30px;
+    height:30px;
+    border:2px solid white;
+  }
+  .search-flight-icons-border-left{
+    border-left:1px solid gray;
+  }
+  //////////// Drop down
+  .dropdown-menu:before {
+    position: absolute;
+    top: -7px;
+    left: 9px;
+    display: inline-block;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #ccc;
+    border-left: 7px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    content: '';
+  }
+
+  .dropdown-menu:after {
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    display: inline-block;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #ffffff;
+    border-left: 6px solid transparent;
+    content: '';
+  }
+  
+
+  ///// Search results out put
+  .search-out{
+    margin-top:15px;
+    width:1110px;
+  }
+
+
+  .search-filters {
+    overflow: hidden;
+    margin-right:5px;
+    font-size:13px;
+    float:left;
+    box-shadow: 5px 5px 5px #888888;
+  }
+  .search-filters-font{
+    font-size:15px;
+    font-weight:bold;
+    color:gray;
+    text-align:center;
+    border:1px solid #bdbdbd;
+  }
+  .search-filters-containers {
+    width: 248px;
+    height: 500px;
+    overflow: auto;
+    background: white;
+    border: 1px solid #e0e0e0;
+    padding:15px;
+  }
+
+  .search-results{
+    margin-left:5px;
+    width:850px;
+    height:auto;
+    float:left;
+    border-left: 1px solid #bdbdbd;
+  }    
+  
+  /// Avail Flights Haedder.
+  .search-flight-info-description,.search-flight-info-description-rt {
+    margin:0px 10px;
+    padding:5px;
+    width:840px;
+    height:45px;
+    background:white;
+    box-shadow: 5px 5px 5px #888888;
+  }
+  
+  .search-flight-info-description-rt{
+    width:419px;
+    float:left;
+    margin: 0px 0px 0px 5px;
+  }
+  .search-flight-info-part-headder,.search-flight-info-part-headder-rt{
+    text-align: center;
+    margin-top:8px;
+  }
+  .search-flight-info-part-headder-rt{    
+    font-size:13px;
+  }
+  .search-flight-info-part-flight, .search-flight-info-part-flight-rt{
+    width:180px;
+    height:36px;
+    border-right:1px solid #bdbdbd;
+    float:left;
+  }
+  .search-flight-info-part-flight-rt{
+    width:165px;
+  }
+  .search-flight-info-part-flight-img-div{
+    padding:6px;
+    margin-right:20px;
+    margin-left:10px;
+    float:left;
+  }
+  .search-flight-info-part-flight-img{
+    height:30px;
+    width:30px;
+  }
+  
+  .search-flight-info-part-flight-font{
+    margin:3px 0px;
+    color:gray;
+    font-size:11px;
+    float:left;
+  }
+  .search-flight-info-part-flight-font-big{
+    margin:10px 0px;
+    color:gray;
+    font-size:14px;
+    text-align: center;
+  }
+  .search-flight-info-part-flight-highlighter{
+     margin:3px 3px 0px 0px;padding:3px 7px;width:30px;height:30px;font-size:15px;border:2px solid #428bca;color:#428bca;border-radius: 25px;
+  }
+  
+  .search-flight-info-part-flight-name{
+    height:36px;
+    width:100px;
+    margin-right:10px;
+    margin-left:10px;
+    float:left;
+  }
+  
+  .search-flight-info-part-arrival, .search-flight-info-part-departure,.search-flight-info-part-arrival-rt, .search-flight-info-part-departure-rt{
+    width:150px;
+    height:36px;
+    border-right:1px solid #bdbdbd;
+    text-align:center;
+    float:left;
+  }
+  .search-flight-info-part-arrival-rt, .search-flight-info-part-departure-rt{
+    width: 80px;
+  }
+  .search-flight-info-part-duration,.search-flight-info-part-duration-rt{
+    width:150px;
+    height:36px;
+    border-right:1px solid #bdbdbd;
+    text-align:center;
+    float:left;
+  }
+  .search-flight-info-part-duration-rt{
+    width:80px;  
+    border:0px;
+  }
+  .search-flight-info-part-more{
+    width:200px;
+    height:36px;
+    float:left;
+  }
+  ///////////////
+  .search-results-flight-info, .search-results-flight-info-rt{
+    margin:5px 0px 0px 10px;
+    width:840px;
+    height:90px;
+    background:white;
+    padding:2px 0px 0px 5px;
+    box-shadow: 5px 5px 5px #888888;
+    border: 1px solid #e0e0e0;
+  }
+  .search-results-flight-info-rt{
+    width:419px;
+    margin: 5px 0px 0px 5px;
+  }
+  .search-results-flight{
+    width:850px;
+    height:36px;
+  }
+  .search-results-flight-rt{
+    width:420px;
+    height:36px;
+  }
+  .search-results-flight-hr{
+   margin:2px 50px;
+   border-top:1px solid #ccc;
+  }
+
+  
+  //// fare button
+  .search-results-flight-fare{
+    float:right;
+    width:auto;
+    height:auto;
+    margin:0px 2px;
+  }
+  .search-results-flight-fare-cost,.search-results-flight-fare-type, .search-results-flight-fare-button{
+    font-size:14px;
+    width:95px;
+    height:20px;
+    border-radius:3px;
+    font-weight: bold;
+    text-align:center;
+    cursor:pointer;
+    color:white;
+  }
+  .search-results-flight-fare-cost{
+    color:gray;
+  }
+  .search-results-flight-fare-type{
+    color:white;
+  }
+  .search-results-flight-more{
+    font-size:10px;
+    margin:0px 2px;
+    border-radius:3px;
+    border:1px solid #d3d3d3;
+    width:90px;
+    min-height:14px;
+    float:left;
+    text-align:center;
+    color:black;
+  }
+
+  .search-results-flight-fare-type{
+    text-align: center;
+    padding-left:0px;
+  }
+  
+  .footer{
+     float:left;
+     margin:15px 0px;
+     background:orange;
+     width:100%;
+     height:300px;
+  }
+  .font-reverse{
+    -moz-transform: scale(1, -1);
+    -webkit-transform: scale(1, -1);
+    -o-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+    transform: scale(1, -1);
+  }
+
+  
+  
+  
+  
+  
+  ////////////////////
+  
+   
+.submenue{
+  width:100%;
+  height:35px;
+  background-color: black;
+  color:white;
+}
+.submenue-tabs{
+  cursor: pointer;
+  float:left;
+  width:120px;
+  height:35px;
+  padding:5px;
+  text-align:center;
+  font-weight: bold;
+  font-size: 15px;
+}
+.submenue-tabs-hidden{
+  display:none;
+}
+.submenue-tabs-active{
+  background-color:green;
+}
+
+    .event-box event-box-pre{}
+    .event-box{float:left;width:100%;max-width:1110px;height:auto;background:white;padding:2px;margin-top:10px;box-shadow: 5px 5px 5px #888888;border:10px solid lightblue;}
+    .event-box-header{float:left;margin-left:20px;width:100%;height:30px;color:gray;font-size:20px;font-weight:bolder;}
+    .event-box-event-desc{float:left;margin-left:50px;width:1000px;height:auto;color:gray;font-size:15px;border:1px solid #D3D3D3;}
+    .event-box-event-desc-box{width:500px;min-height:135px;max-height:170px;float:left;}
+    .event-box-event-desc-box table{width:450px;height:auto;float:left;margin-left:50px;}
+    .event-box-event-desc-box-header{width:100%;height:auto;font-style:italic;font-size:15px;font-weight:bold;}
+    .event-box-submit-box{float:right;padding-top:20px;height:100%;width:98px;}
+    .event-box-approved{color:#4ea24e;}
+
+    .close-dev-button{float:right;cursor:pointer;}//not need 2.0
+    .event-tips{float:left;width:100%;height:auto;background:white;padding:5px 50px;}
+    .event-tips-head{float:left;width:100%;height:auto;padding:0px 50px;}
+    .event-tips-body{float:left;width:100%;height:auto;padding:0px 75px;}
+
+    .event-flt-box{width:400px;min-height:135px;max-height:170px;float:left;border-right:1px solid #D3D3D3;font-size:13px;border-left:1px solid #D3D3D3;font-size:13px;}
+    .event-partner{font-style:italic;text-align:center;width:100%;height:auto;float:left;border-bottom:1px solid #D3D3D3;}
+    .event-flt-info{width:60px;height:auto;float:left;padding:5px;}
+    .event-flt-from-data{color:#545454;float:left;text-align:right;width:85px;}
+    .event-flt-from-to-more-info{color:#545454;float:left;text-align:center;width:80px;}
+    .event-flt-to-data{color:#545454;float:left;text-align:left;width:85px;height:auto;}
+    .event-flt-total-price{width:80px;height:auto;paddin-top:px;float:left;}
+    .event-flt-total-price b{padding:3px 4px;border-radius:4px;}
+    .event-flt-more-details-btn{cursor:pointer;font-size:13px;color:#428bca;text-decoration:underline;text-align:center;}
+
+    .event-status-circle-box{width:50px;height:auto;float:left;font-size:10px;margin-left:5px;}
+    .event-status-circle-box:hover{color:#6e366f;font-size:15px;}
+    .event-status-circle-box i{font-size:25px;}
+    .event-status-arrow-box{padding-top:9px;width:25px;height:auto;float:left;}

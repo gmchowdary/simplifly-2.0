@@ -1,0 +1,2 @@
+module Flights::FltSsrHelper
+end

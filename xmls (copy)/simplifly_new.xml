@@ -1,0 +1,401 @@
+++++++++++++++ REQUEST AVOW+++++++++++++
+<flights_avail_search_rq>
+  <call_id>SIM_1234567890</call_id>
+  <bkg_ngn_360_api_user>
+    <user_id>otaapi</user_id>
+    <password>Goair@@018</password>
+    <is_pw_encr>no</is_pw_encr>
+  </bkg_ngn_360_api_user>
+  <vdr_sup_rel_ids>
+    <vdr_sup_rel_id>9</vdr_sup_rel_id>
+  </vdr_sup_rel_ids>
+  <login_types>ALL</login_types>
+  <onward_sector>
+    <origin>AMD</origin>
+    <dest>CCU</dest>
+    <dept_date>2017-10-31 00:00</dept_date>
+  </onward_sector>
+  <return_sector/>
+  <pax>
+    <adt>1</adt>
+    <chd>0</chd>
+    <inf>0</inf>
+  </pax>
+  <return_with_desc>
+    <fare_name>true</fare_name>
+    <aircraft_name>true</aircraft_name>
+    <airport_name>true</airport_name>
+    <airport_city_name>true</airport_city_name>
+    <charge_name>true</charge_name>
+    <cabin_cls_name>true</cabin_cls_name>
+  </return_with_desc>
+</flights_avail_search_rq>
+++++++++++++++ RESPONSE +++++++++++++
+{"flights_avail_search_rs":{"onward_sector":{"flt":[{"segs":{"seg":[{"flt_num":"G8 532","dept_datetime":"2017-10-31T06:25:00.000Z","arr_datetime":"2017-10-31T09:10:00.000Z","origin":"AMD","dest":"CCU","stops":"0","via":null,"aircraft":"320","dept_term":"1","arr_term":"2","dur":null,"bag_alw":"15K"}]},"fares":{"fare":[{"vdr_sup_rel_id":"9","base":"1500.0000","charge_yq":300.0,"charge_yr":50.0,"charge_psf":248.0,"charge_udf":127.0,"charge_k3":47.0,"charge_jn":null,"charge_ot":null,"charge_sbc":null,"charge_kkc":null,"charge_xxx":null,"cabin_cls":"Y","cabin_cls_name":"Economy","fb_code":"0~A~~G8~AMDCCUA~100N~~0~1~~X","fare_cls":"A:GS","seats":"60"},{"vdr_sup_rel_id":"9","base":"7217.0000","charge_yq":300.0,"charge_yr":50.0,"charge_psf":248.0,"charge_udf":127.0,"charge_k3":47.0,"charge_jn":null,"charge_ot":null,"charge_sbc":null,"charge_kkc":null,"charge_xxx":null,"cabin_cls":"Y","cabin_cls_name":"Economy","fb_code":"0~C~~G8~CO9REINX~0001~~0~5~~X","fare_cls":"C:GB","seats":"4"}]}},{"segs":{"seg":[{"flt_num":"G8 702","dept_datetime":"2017-10-31T17:30:00.000Z","arr_datetime":"2017-10-31T21:40:00.000Z","origin":"AMD","dest":"CCU","stops":"1","via":"JAI","aircraft":"320","dept_term":"1","arr_term":"2","dur":null,"bag_alw":"15K"}]},"fares":{"fare":[{"vdr_sup_rel_id":"9","base":"1500.0000","charge_yq":300.0,"charge_yr":50.0,"charge_psf":248.0,"charge_udf":127.0,"charge_k3":47.0,"charge_jn":null,"charge_ot":null,"charge_sbc":null,"charge_kkc":null,"charge_xxx":null,"cabin_cls":"Y","cabin_cls_name":"Economy","fb_code":"0~A~~G8~AMDCCUA~100N~~0~1~~X","fare_cls":"A:GS","seats":"60"},{"vdr_sup_rel_id":"9","base":"7217.0000","charge_yq":300.0,"charge_yr":50.0,"charge_psf":248.0,"charge_udf":127.0,"charge_k3":47.0,"charge_jn":null,"charge_ot":null,"charge_sbc":null,"charge_kkc":null,"charge_xxx":null,"cabin_cls":"Y","cabin_cls_name":"Economy","fb_code":"0~C~~G8~CO9REINX~0001~~0~5~~X","fare_cls":"C:GB","seats":"4"}]}},{"segs":{"seg":[{"flt_num":"G8 179","dept_datetime":"2017-10-31T09:30:00.000Z","arr_datetime":"2017-10-31T11:10:00.000Z","origin":"AMD","dest":"DEL","stops":"0","via":null,"aircraft":"320","dept_term":"1","arr_term":"1D","dur":null,"bag_alw":"15K"},{"flt_num":"G8 101","dept_datetime":"2017-11-01T05:55:00.000Z","arr_datetime":"2017-11-01T08:05:00.000Z","origin":"DEL","dest":"CCU","stops":"0","via":null,"aircraft":"320","dept_term":"1D","arr_term":"2","dur":null,"bag_alw":"15K"}]},"fares":{"fare":[{"vdr_sup_rel_id":"9","base":"1500.0000","charge_yq":300.0,"charge_yr":50.0,"charge_psf":248.0,"charge_udf":127.0,"charge_k3":47.0,"charge_jn":null,"charge_ot":null,"charge_sbc":null,"charge_kkc":null,"charge_xxx":null,"cabin_cls":"Y","cabin_cls_name":"Economy","fb_code":"0~A~~G8~AMDCCUA~100N~~0~1~~X","fare_cls":"A:GS","seats":"60"}]}},{"segs":{"seg":[{"flt_num":"G8 179","dept_datetime":"2017-10-31T09:30:00.000Z","arr_datetime":"2017-10-31T11:10:00.000Z","origin":"AMD","dest":"DEL","stops":"0","via":null,"aircraft":"320","dept_term":"1","arr_term":"1D","dur":null,"bag_alw":"15K"},{"flt_num":"G8 127","dept_datetime":"2017-10-31T19:50:00.000Z","arr_datetime":"2017-10-31T22:05:00.000Z","origin":"DEL","dest":"CCU","stops":"0","via":null,"aircraft":"320","dept_term":"1D","arr_term":"2","dur":null,"bag_alw":"15K"}]},"fares":{"fare":[{"vdr_sup_rel_id":"9","base":"1500.0000","charge_yq":300.0,"charge_yr":50.0,"charge_psf":248.0,"charge_udf":127.0,"charge_k3":47.0,"charge_jn":null,"charge_ot":null,"charge_sbc":null,"charge_kkc":null,"charge_xxx":null,"cabin_cls":"Y","cabin_cls_name":"Economy","fb_code":"0~A~~G8~AMDCCUA~100N~~0~1~~X","fare_cls":"A:GS","seats":"60"}]}},{"segs":{"seg":[{"flt_num":"G8 714","dept_datetime":"2017-10-31T22:05:00.000Z","arr_datetime":"2017-10-31T23:40:00.000Z","origin":"AMD","dest":"DEL","stops":"0","via":null,"aircraft":"320","dept_term":"1","arr_term":"1D","dur":null,"bag_alw":"15K"},{"flt_num":"G8 101","dept_datetime":"2017-11-01T05:55:00.000Z","arr_datetime":"2017-11-01T08:05:00.000Z","origin":"DEL","dest":"CCU","stops":"0","via":null,"aircraft":"320","dept_term":"1D","arr_term":"2","dur":null,"bag_alw":"15K"}]},"fares":{"fare":[{"vdr_sup_rel_id":"9","base":"1500.0000","charge_yq":300.0,"charge_yr":50.0,"charge_psf":248.0,"charge_udf":127.0,"charge_k3":47.0,"charge_jn":null,"charge_ot":null,"charge_sbc":null,"charge_kkc":null,"charge_xxx":null,"cabin_cls":"Y","cabin_cls_name":"Economy","fb_code":"0~A~~G8~AMDCCUA~100N~~0~1~~X","fare_cls":"A:GS","seats":"60"}]}}]},"status":"success","call_id":"SIM_1234567890","ap_names":{"app":["AMD - Ahmedabad","CCU - Kolkata( Calcutta )"]},"rq":{"onward_sector":[{"origin":"AMD","dest":"CCU","dept_date":"2017-10-31 00:00"}],"return_sector":[]},"remark":""}}
+
+
+
+
+++++++++++++++ REQUEST FWOW+++++++++++++
+<flights_price_rq>
+  <call_id>SIM_1234567890</call_id>
+  <bkg_ngn_360_api_user>
+    <user_id>otaapi</user_id>
+    <password>Goair@@018</password>
+    <is_pw_encr>no</is_pw_encr>
+  </bkg_ngn_360_api_user>
+  <pax>
+    <adt>1</adt>
+    <chd>0</chd>
+    <inf>0</inf>
+  </pax>
+  <onward_sector>
+    <segs>
+      <seg>
+        <flt_num>G8 532</flt_num>
+        <dept_datetime>2017-10-31T06:25:00.000Z</dept_datetime>
+        <arr_datetime>2017-10-31T09:10:00.000Z</arr_datetime>
+        <origin>AMD</origin>
+        <dest>CCU</dest>
+        <stops>0</stops>
+        <via/>
+        <aircraft>320</aircraft>
+        <dept_term>1</dept_term>
+        <arr_term>2</arr_term>
+        <dur/>
+        <bag_alw>15K</bag_alw>
+      </seg>
+    </segs>
+    <fares>
+      <fare>
+        <vdr_sup_rel_id>9</vdr_sup_rel_id>
+        <base>7217.0000</base>
+        <charge_yq>300.0</charge_yq>
+        <charge_yr>50.0</charge_yr>
+        <charge_psf>248.0</charge_psf>
+        <charge_udf>127.0</charge_udf>
+        <charge_k3>47.0</charge_k3>
+        <charge_jn/>
+        <charge_ot/>
+        <charge_sbc/>
+        <charge_kkc/>
+        <charge_xxx/>
+        <cabin_cls>Y</cabin_cls>
+        <cabin_cls_name>Economy</cabin_cls_name>
+        <fb_code>0~C~~G8~CO9REINX~0001~~0~5~~X</fb_code>
+        <fare_cls>C:GB</fare_cls>
+        <seats>4</seats>
+      </fare>
+    </fares>
+  </onward_sector>
+  <return_sector/>
+</flights_price_rq>
+++++++++++++++ RESPONSE +++++++++++++
+{"flights_price_rs":{"onward_sector":{"flt":[{"segs":{"seg":[{"flt_num":"G8 532","dept_datetime":"2017-10-31T06:25:00.000Z","arr_datetime":"2017-10-31T09:10:00.000Z","origin":"AMD","dest":"CCU","stops":"0","via":null,"aircraft":"320","dept_term":"1","arr_term":"2","dur":null,"bag_alw":"15K"}]}}]},"return_sector":[],"fares":{"fare":{"vdr_sup_rel_id":"9","base":7217.0,"charge_yr":50.0,"charge_yq":300.0,"charge_psf":248.0,"charge_udf":127.0,"charge_xx":50.0,"charge_k3":454.0,"charge_sst":454.0,"fb_code":"0~C~~G8~CO9REINX~0001~~0~5~~X","fare_cls":"C:GB"}},"call_id":"SIM_1234567890","pax":{"adt":"1","chd":"0","inf":"0"},"status":"success","remark":""}}
+
+
+++++++++++++++++++++++++++++add_services ow++++++++++++++++++++++++++++++++
+  Parameters: {"utf8"=>"✓", "complete_booking"=>{"ow"=>"{\"response\":{\"onward_sector\":{\"flt\":[{\"segs\":{\"seg\":[{\"flt_num\":\"G8 532\",\"dept_datetime\":\"2017-10-31T06:25:00.000Z\",\"arr_datetime\":\"2017-10-31T09:10:00.000Z\",\"origin\":\"AMD\",\"dest\":\"CCU\",\"stops\":\"0\",\"via\":null,\"aircraft\":\"320\",\"dept_term\":\"1\",\"arr_term\":\"2\",\"dur\":null,\"bag_alw\":\"15K\"}]}}]},\"return_sector\":[],\"fares\":{\"fare\":{\"vdr_sup_rel_id\":\"9\",\"base\":7217.0,\"charge_yr\":50.0,\"charge_yq\":300.0,\"charge_psf\":248.0,\"charge_udf\":127.0,\"charge_xx\":50.0,\"charge_k3\":454.0,\"charge_sst\":454.0,\"fb_code\":\"0~C~~G8~CO9REINX~0001~~0~5~~X\",\"fare_cls\":\"C:GB\"}},\"call_id\":\"SIM_1234567890\",\"pax\":{\"adt\":\"1\",\"chd\":\"0\",\"inf\":\"0\"},\"status\":\"success\",\"remark\":\"\"},\"segs\":[{\"table\":{\"flt_num\":\"G8 532\",\"dept_datetime\":\"2017-10-31T06:25:00.000Z\",\"arr_datetime\":\"2017-10-31T09:10:00.000Z\",\"origin\":\"AMD\",\"dest\":\"CCU\",\"stops\":\"0\",\"via\":null,\"aircraft\":\"320\",\"dept_term\":\"1\",\"arr_term\":\"2\",\"dur\":null,\"bag_alw\":\"15K\"},\"modifiable\":true}],\"fare\":{\"vdr_sup_rel_id\":\"9\",\"base\":7217.0,\"charge_yr\":50.0,\"charge_yq\":300.0,\"charge_psf\":248.0,\"charge_udf\":127.0,\"charge_xx\":50.0,\"charge_k3\":454.0,\"charge_sst\":454.0,\"fb_code\":\"0~C~~G8~CO9REINX~0001~~0~5~~X\",\"fare_cls\":\"C:GB\"},\"trip_type\":\"ow\"}"}, "commit"=>"Book Now"}
+
+
+++++++++++++++ REQUEST TKOW+++++++++++++
+<flights_ticket_rq>
+  <call_id>SIM_1234567890</call_id>
+  <bkg_ngn_360_api_user>
+    <user_id>otaapi</user_id>
+    <password>Goair@@018</password>
+    <is_pw_encr>no</is_pw_encr>
+  </bkg_ngn_360_api_user>
+  <pax>
+    <adt>1</adt>
+    <chd>0</chd>
+    <inf>0</inf>
+  </pax>
+  <pax_details>
+    <pax>
+      <pax_type>ADT</pax_type>
+      <first_name>Venkat</first_name>
+      <middle_name>Rao</middle_name>
+      <last_name>M</last_name>
+      <dob>1988-12-20 00:00</dob>
+      <phone_number>1234567890</phone_number>
+      <email>venkateswara.rao@irissbsp.com</email>
+      <gender>M</gender>
+      <title>MR</title>
+    </pax>
+  </pax_details>
+  <ticket_action>hold/ticket</ticket_action>
+  <onward_sector>
+    <segs>
+      <seg>
+        <flt_num>G8 532</flt_num>
+        <dept_datetime>2017-10-31T06:25:00.000Z</dept_datetime>
+        <arr_datetime>2017-10-31T09:10:00.000Z</arr_datetime>
+        <origin>AMD</origin>
+        <dest>CCU</dest>
+        <stops>0</stops>
+        <via/>
+        <aircraft>320</aircraft>
+        <dept_term>1</dept_term>
+        <arr_term>2</arr_term>
+        <dur/>
+        <bag_alw>15K</bag_alw>
+      </seg>
+    </segs>
+  </onward_sector>
+  <fares>
+    <fare>
+      <vdr_sup_rel_id>9</vdr_sup_rel_id>
+      <base>7217.0</base>
+      <charge_yq>300.0</charge_yq>
+      <charge_yr>50.0</charge_yr>
+      <charge_psf>248.0</charge_psf>
+      <charge_udf>127.0</charge_udf>
+      <charge_k3>454.0</charge_k3>
+      <charge_jn/>
+      <charge_ot/>
+      <charge_sbc/>
+      <charge_kkc/>
+      <charge_xx>50.0</charge_xx>
+      <charge_sst>454.0</charge_sst>
+      <cabin_cls/>
+      <cabin_cls_name/>
+      <fb_code>0~C~~G8~CO9REINX~0001~~0~5~~X</fb_code>
+      <fare_cls>C:GB</fare_cls>
+      <seats/>
+    </fare>
+  </fares>
+</flights_ticket_rq>
+++++++++++++++ RESPONSE +++++++++++++
+{"flights_ticket_rs":{"call_id":"SIM_1234567890","pax":{"adt":"1","chd":"0","inf":"0"},"pax_details":{"pax":[{"pax_type":"ADT","first_name":"Venkat","middle_name":"Rao","last_name":"M","dob":"1988-12-20 00:00","phone_number":"1234567890","email":"venkateswara.rao@irissbsp.com","gender":"M","title":"MR"}],"airline_pnr":"U4FVWF"},"status":"success","remark":""}}
+
+
+++++++++++++++ REQUEST AVRT+++++++++++++
+<flights_avail_search_rq>
+  <call_id>SIM_1234567890</call_id>
+  <bkg_ngn_360_api_user>
+    <user_id>otaapi</user_id>
+    <password>Goair@@018</password>
+    <is_pw_encr>no</is_pw_encr>
+  </bkg_ngn_360_api_user>
+  <vdr_sup_rel_ids>
+    <vdr_sup_rel_id>9</vdr_sup_rel_id>
+  </vdr_sup_rel_ids>
+  <login_types>ALL</login_types>
+  <onward_sector>
+    <origin>AMD</origin>
+    <dest>CCU</dest>
+    <dept_date>2017-10-31 00:00</dept_date>
+  </onward_sector>
+  <return_sector>
+    <origin>CCU</origin>
+    <dest>AMD</dest>
+    <dept_date>2017-11-10 00:00</dept_date>
+  </return_sector>
+  <pax>
+    <adt>1</adt>
+    <chd>0</chd>
+    <inf>0</inf>
+  </pax>
+  <return_with_desc>
+    <fare_name>true</fare_name>
+    <aircraft_name>true</aircraft_name>
+    <airport_name>true</airport_name>
+    <airport_city_name>true</airport_city_name>
+    <charge_name>true</charge_name>
+    <cabin_cls_name>true</cabin_cls_name>
+  </return_with_desc>
+</flights_avail_search_rq>
+++++++++++++++ RESPONSE +++++++++++++
+{"flights_avail_search_rs":{"onward_sector":{"flt":[{"segs":{"seg":[{"flt_num":"G8 532","dept_datetime":"2017-10-31T06:25:00.000Z","arr_datetime":"2017-10-31T09:10:00.000Z","origin":"AMD","dest":"CCU","stops":"0","via":null,"aircraft":"320","dept_term":"1","arr_term":"2","dur":null,"bag_alw":"15K"}]},"fares":{"fare":[{"vdr_sup_rel_id":"9","base":"1500.0000","charge_yq":300.0,"charge_yr":50.0,"charge_psf":248.0,"charge_udf":127.0,"charge_k3":47.0,"charge_jn":null,"charge_ot":null,"charge_sbc":null,"charge_kkc":null,"charge_xxx":null,"cabin_cls":"Y","cabin_cls_name":"Economy","fb_code":"0~A~~G8~AMDCCUA~100N~~0~1~~X","fare_cls":"A:GS","seats":"60"},{"vdr_sup_rel_id":"9","base":"7217.0000","charge_yq":300.0,"charge_yr":50.0,"charge_psf":248.0,"charge_udf":127.0,"charge_k3":47.0,"charge_jn":null,"charge_ot":null,"charge_sbc":null,"charge_kkc":null,"charge_xxx":null,"cabin_cls":"Y","cabin_cls_name":"Economy","fb_code":"0~C~~G8~CO9REINX~0001~~0~5~~X","fare_cls":"C:GB","seats":"3"}]}},{"segs":{"seg":[{"flt_num":"G8 702","dept_datetime":"2017-10-31T17:30:00.000Z","arr_datetime":"2017-10-31T21:40:00.000Z","origin":"AMD","dest":"CCU","stops":"1","via":"JAI","aircraft":"320","dept_term":"1","arr_term":"2","dur":null,"bag_alw":"15K"}]},"fares":{"fare":[{"vdr_sup_rel_id":"9","base":"1500.0000","charge_yq":300.0,"charge_yr":50.0,"charge_psf":248.0,"charge_udf":127.0,"charge_k3":47.0,"charge_jn":null,"charge_ot":null,"charge_sbc":null,"charge_kkc":null,"charge_xxx":null,"cabin_cls":"Y","cabin_cls_name":"Economy","fb_code":"0~A~~G8~AMDCCUA~100N~~0~1~~X","fare_cls":"A:GS","seats":"60"},{"vdr_sup_rel_id":"9","base":"7217.0000","charge_yq":300.0,"charge_yr":50.0,"charge_psf":248.0,"charge_udf":127.0,"charge_k3":47.0,"charge_jn":null,"charge_ot":null,"charge_sbc":null,"charge_kkc":null,"charge_xxx":null,"cabin_cls":"Y","cabin_cls_name":"Economy","fb_code":"0~C~~G8~CO9REINX~0001~~0~5~~X","fare_cls":"C:GB","seats":"4"}]}},{"segs":{"seg":[{"flt_num":"G8 179","dept_datetime":"2017-10-31T09:30:00.000Z","arr_datetime":"2017-10-31T11:10:00.000Z","origin":"AMD","dest":"DEL","stops":"0","via":null,"aircraft":"320","dept_term":"1","arr_term":"1D","dur":null,"bag_alw":"15K"},{"flt_num":"G8 101","dept_datetime":"2017-11-01T05:55:00.000Z","arr_datetime":"2017-11-01T08:05:00.000Z","origin":"DEL","dest":"CCU","stops":"0","via":null,"aircraft":"320","dept_term":"1D","arr_term":"2","dur":null,"bag_alw":"15K"}]},"fares":{"fare":[{"vdr_sup_rel_id":"9","base":"1500.0000","charge_yq":300.0,"charge_yr":50.0,"charge_psf":248.0,"charge_udf":127.0,"charge_k3":47.0,"charge_jn":null,"charge_ot":null,"charge_sbc":null,"charge_kkc":null,"charge_xxx":null,"cabin_cls":"Y","cabin_cls_name":"Economy","fb_code":"0~A~~G8~AMDCCUA~100N~~0~1~~X","fare_cls":"A:GS","seats":"60"}]}},{"segs":{"seg":[{"flt_num":"G8 179","dept_datetime":"2017-10-31T09:30:00.000Z","arr_datetime":"2017-10-31T11:10:00.000Z","origin":"AMD","dest":"DEL","stops":"0","via":null,"aircraft":"320","dept_term":"1","arr_term":"1D","dur":null,"bag_alw":"15K"},{"flt_num":"G8 127","dept_datetime":"2017-10-31T19:50:00.000Z","arr_datetime":"2017-10-31T22:05:00.000Z","origin":"DEL","dest":"CCU","stops":"0","via":null,"aircraft":"320","dept_term":"1D","arr_term":"2","dur":null,"bag_alw":"15K"}]},"fares":{"fare":[{"vdr_sup_rel_id":"9","base":"1500.0000","charge_yq":300.0,"charge_yr":50.0,"charge_psf":248.0,"charge_udf":127.0,"charge_k3":47.0,"charge_jn":null,"charge_ot":null,"charge_sbc":null,"charge_kkc":null,"charge_xxx":null,"cabin_cls":"Y","cabin_cls_name":"Economy","fb_code":"0~A~~G8~AMDCCUA~100N~~0~1~~X","fare_cls":"A:GS","seats":"60"}]}},{"segs":{"seg":[{"flt_num":"G8 714","dept_datetime":"2017-10-31T22:05:00.000Z","arr_datetime":"2017-10-31T23:40:00.000Z","origin":"AMD","dest":"DEL","stops":"0","via":null,"aircraft":"320","dept_term":"1","arr_term":"1D","dur":null,"bag_alw":"15K"},{"flt_num":"G8 101","dept_datetime":"2017-11-01T05:55:00.000Z","arr_datetime":"2017-11-01T08:05:00.000Z","origin":"DEL","dest":"CCU","stops":"0","via":null,"aircraft":"320","dept_term":"1D","arr_term":"2","dur":null,"bag_alw":"15K"}]},"fares":{"fare":[{"vdr_sup_rel_id":"9","base":"1500.0000","charge_yq":300.0,"charge_yr":50.0,"charge_psf":248.0,"charge_udf":127.0,"charge_k3":47.0,"charge_jn":null,"charge_ot":null,"charge_sbc":null,"charge_kkc":null,"charge_xxx":null,"cabin_cls":"Y","cabin_cls_name":"Economy","fb_code":"0~A~~G8~AMDCCUA~100N~~0~1~~X","fare_cls":"A:GS","seats":"60"}]}}]},"return_sector":{"flt":[{"segs":{"seg":[{"flt_num":"G8 537","dept_datetime":"2017-11-10T16:45:00.000Z","arr_datetime":"2017-11-10T19:25:00.000Z","origin":"CCU","dest":"AMD","stops":"0","via":null,"aircraft":"320","dept_term":"2","arr_term":"1","dur":null,"bag_alw":"15K"}]},"fares":{"fare":[{"vdr_sup_rel_id":"9","base":"7217.0000","charge_yq":300.0,"charge_yr":50.0,"charge_psf":248.0,"charge_udf":127.0,"charge_k3":47.0,"charge_jn":null,"charge_ot":null,"charge_sbc":null,"charge_kkc":null,"charge_xxx":null,"cabin_cls":"Y","cabin_cls_name":"Economy","fb_code":"0~C~~G8~CO9REINX~0001~~0~6~~X","fare_cls":"C:GB","seats":"4"},{"vdr_sup_rel_id":"9","base":"10129.0000","charge_yq":300.0,"charge_yr":50.0,"charge_psf":248.0,"charge_udf":127.0,"charge_k3":47.0,"charge_jn":null,"charge_ot":null,"charge_sbc":null,"charge_kkc":null,"charge_xxx":null,"cabin_cls":"Y","cabin_cls_name":"Economy","fb_code":"0~A~~G8~AO9RBINX~0001~~0~5~~X","fare_cls":"A:GS","seats":"60"}]}},{"segs":{"seg":[{"flt_num":"G8 701","dept_datetime":"2017-11-10T05:45:00.000Z","arr_datetime":"2017-11-10T10:10:00.000Z","origin":"CCU","dest":"AMD","stops":"1","via":"JAI","aircraft":"320","dept_term":"2","arr_term":"2","dur":null,"bag_alw":"15K"}]},"fares":{"fare":[{"vdr_sup_rel_id":"9","base":"7217.0000","charge_yq":300.0,"charge_yr":50.0,"charge_psf":248.0,"charge_udf":127.0,"charge_k3":47.0,"charge_jn":null,"charge_ot":null,"charge_sbc":null,"charge_kkc":null,"charge_xxx":null,"cabin_cls":"Y","cabin_cls_name":"Economy","fb_code":"0~C~~G8~CO9REINX~0001~~0~6~~X","fare_cls":"C:GB","seats":"4"},{"vdr_sup_rel_id":"9","base":"10129.0000","charge_yq":300.0,"charge_yr":50.0,"charge_psf":248.0,"charge_udf":127.0,"charge_k3":47.0,"charge_jn":null,"charge_ot":null,"charge_sbc":null,"charge_kkc":null,"charge_xxx":null,"cabin_cls":"Y","cabin_cls_name":"Economy","fb_code":"0~A~~G8~AO9RBINX~0001~~0~5~~X","fare_cls":"A:GS","seats":"60"}]}},{"segs":{"seg":[{"flt_num":"G8 128","dept_datetime":"2017-11-10T06:15:00.000Z","arr_datetime":"2017-11-10T08:40:00.000Z","origin":"CCU","dest":"DEL","stops":"0","via":null,"aircraft":"320","dept_term":"2","arr_term":"1D","dur":null,"bag_alw":"15K"},{"flt_num":"G8 713","dept_datetime":"2017-11-10T20:10:00.000Z","arr_datetime":"2017-11-10T21:35:00.000Z","origin":"DEL","dest":"AMD","stops":"0","via":null,"aircraft":"320","dept_term":"1D","arr_term":"1","dur":null,"bag_alw":"15K"}]},"fares":{"fare":[{"vdr_sup_rel_id":"9","base":"10542.0000","charge_yq":300.0,"charge_yr":50.0,"charge_psf":248.0,"charge_udf":127.0,"charge_k3":47.0,"charge_jn":null,"charge_ot":null,"charge_sbc":null,"charge_kkc":null,"charge_xxx":null,"cabin_cls":"Y","cabin_cls_name":"Economy","fb_code":"0~A~~G8~AO9RBINX~0008~~0~1~~X","fare_cls":"A:GS","seats":"60"}]}},{"segs":{"seg":[{"flt_num":"G8 102","dept_datetime":"2017-11-10T14:15:00.000Z","arr_datetime":"2017-11-10T16:45:00.000Z","origin":"CCU","dest":"DEL","stops":"0","via":null,"aircraft":"320","dept_term":"2","arr_term":"1D","dur":null,"bag_alw":"15K"},{"flt_num":"G8 711","dept_datetime":"2017-11-11T07:35:00.000Z","arr_datetime":"2017-11-11T09:00:00.000Z","origin":"DEL","dest":"AMD","stops":"0","via":null,"aircraft":"320","dept_term":"1D","arr_term":"1","dur":null,"bag_alw":"15K"}]},"fares":{"fare":[{"vdr_sup_rel_id":"9","base":"10542.0000","charge_yq":300.0,"charge_yr":50.0,"charge_psf":248.0,"charge_udf":127.0,"charge_k3":47.0,"charge_jn":null,"charge_ot":null,"charge_sbc":null,"charge_kkc":null,"charge_xxx":null,"cabin_cls":"Y","cabin_cls_name":"Economy","fb_code":"0~A~~G8~AO9RBINX~0008~~0~1~~X","fare_cls":"A:GS","seats":"60"}]}},{"segs":{"seg":[{"flt_num":"G8 102","dept_datetime":"2017-11-10T14:15:00.000Z","arr_datetime":"2017-11-10T16:45:00.000Z","origin":"CCU","dest":"DEL","stops":"0","via":null,"aircraft":"320","dept_term":"2","arr_term":"1D","dur":null,"bag_alw":"15K"},{"flt_num":"G8 713","dept_datetime":"2017-11-10T20:10:00.000Z","arr_datetime":"2017-11-10T21:35:00.000Z","origin":"DEL","dest":"AMD","stops":"0","via":null,"aircraft":"320","dept_term":"1D","arr_term":"1","dur":null,"bag_alw":"15K"}]},"fares":{"fare":[{"vdr_sup_rel_id":"9","base":"10542.0000","charge_yq":300.0,"charge_yr":50.0,"charge_psf":248.0,"charge_udf":127.0,"charge_k3":47.0,"charge_jn":null,"charge_ot":null,"charge_sbc":null,"charge_kkc":null,"charge_xxx":null,"cabin_cls":"Y","cabin_cls_name":"Economy","fb_code":"0~A~~G8~AO9RBINX~0008~~0~1~~X","fare_cls":"A:GS","seats":"60"}]}}]},"status":"success","call_id":"SIM_1234567890","ap_names":{"app":["AMD - Ahmedabad","CCU - Kolkata( Calcutta )"]},"rq":{"onward_sector":[{"origin":"AMD","dest":"CCU","dept_date":"2017-10-31 00:00"}],"return_sector":[{"origin":"CCU","dest":"AMD","dept_date":"2017-11-10 00:00"}]},"remark":""}}
+
+
+
+++++++++++++++ REQUEST FQRT+++++++++++++
+<flights_price_rq>
+  <call_id>SIM_1234567890</call_id>
+  <bkg_ngn_360_api_user>
+    <user_id>otaapi</user_id>
+    <password>Goair@@018</password>
+    <is_pw_encr>no</is_pw_encr>
+  </bkg_ngn_360_api_user>
+  <pax>
+    <adt>1</adt>
+    <chd>0</chd>
+    <inf>0</inf>
+  </pax>
+  <onward_sector>
+    <segs>
+      <seg>
+        <flt_num>G8 532</flt_num>
+        <dept_datetime>2017-10-31T06:25:00.000Z</dept_datetime>
+        <arr_datetime>2017-10-31T09:10:00.000Z</arr_datetime>
+        <origin>AMD</origin>
+        <dest>CCU</dest>
+        <stops>0</stops>
+        <via/>
+        <aircraft>320</aircraft>
+        <dept_term>1</dept_term>
+        <arr_term>2</arr_term>
+        <dur/>
+        <bag_alw>15K</bag_alw>
+      </seg>
+    </segs>
+    <fares>
+      <fare>
+        <vdr_sup_rel_id>9</vdr_sup_rel_id>
+        <base>1500.0000</base>
+        <charge_yq>300.0</charge_yq>
+        <charge_yr>50.0</charge_yr>
+        <charge_psf>248.0</charge_psf>
+        <charge_udf>127.0</charge_udf>
+        <charge_k3>47.0</charge_k3>
+        <charge_jn/>
+        <charge_ot/>
+        <charge_sbc/>
+        <charge_kkc/>
+        <charge_xxx/>
+        <cabin_cls>Y</cabin_cls>
+        <cabin_cls_name>Economy</cabin_cls_name>
+        <fb_code>0~A~~G8~AMDCCUA~100N~~0~1~~X</fb_code>
+        <fare_cls>A:GS</fare_cls>
+        <seats>60</seats>
+      </fare>
+    </fares>
+  </onward_sector>
+  <return_sector>
+    <segs>
+      <seg>
+        <flt_num>G8 537</flt_num>
+        <dept_datetime>2017-11-10T16:45:00.000Z</dept_datetime>
+        <arr_datetime>2017-11-10T19:25:00.000Z</arr_datetime>
+        <origin>CCU</origin>
+        <dest>AMD</dest>
+        <stops>0</stops>
+        <via/>
+        <aircraft>320</aircraft>
+        <dept_term>2</dept_term>
+        <arr_term>1</arr_term>
+        <dur/>
+        <bag_alw>15K</bag_alw>
+      </seg>
+    </segs>
+    <fares>
+      <fare>
+        <vdr_sup_rel_id>9</vdr_sup_rel_id>
+        <base>10129.0000</base>
+        <charge_yq>300.0</charge_yq>
+        <charge_yr>50.0</charge_yr>
+        <charge_psf>248.0</charge_psf>
+        <charge_udf>127.0</charge_udf>
+        <charge_k3>47.0</charge_k3>
+        <charge_jn/>
+        <charge_ot/>
+        <charge_sbc/>
+        <charge_kkc/>
+        <charge_xxx/>
+        <cabin_cls>Y</cabin_cls>
+        <cabin_cls_name>Economy</cabin_cls_name>
+        <fb_code>0~A~~G8~AO9RBINX~0001~~0~5~~X</fb_code>
+        <fare_cls>A:GS</fare_cls>
+        <seats>60</seats>
+      </fare>
+    </fares>
+  </return_sector>
+</flights_price_rq>
+++++++++++++++ RESPONSE +++++++++++++
+{"flights_price_rs":{"onward_sector":{"flt":[{"segs":{"seg":[{"flt_num":"G8 532","dept_datetime":"2017-10-31T06:25:00.000Z","arr_datetime":"2017-10-31T09:10:00.000Z","origin":"AMD","dest":"CCU","stops":"0","via":null,"aircraft":"320","dept_term":"1","arr_term":"2","dur":null,"bag_alw":"15K"}]}}]},"return_sector":{"flt":[{"segs":{"seg":[{"flt_num":"G8 537","dept_datetime":"2017-11-10T16:45:00.000Z","arr_datetime":"2017-11-10T19:25:00.000Z","origin":"CCU","dest":"AMD","stops":"0","via":null,"aircraft":"320","dept_term":"2","arr_term":"1","dur":null,"bag_alw":"15K"}]}}]},"fares":{"fare":{"vdr_sup_rel_id":"9","base":11629.0,"charge_yr":100.0,"charge_yq":600.0,"charge_psf":398.0,"charge_udf":643.0,"charge_xx":100.0,"charge_k3":309.0,"charge_sst":309.0,"fb_code":"0~A~~G8~AMDCCUA~100N~~0~1~~X^0~A~~G8~AO9RBINX~0001~~0~5~~X","fare_cls":"A:GS^A:GS"}},"call_id":"SIM_1234567890","pax":{"adt":"1","chd":"0","inf":"0"},"status":"success","remark":""}}
+
+
+++++++++++++++++++++++++++++ add_services ADRT+++++++++++++++++++++++++++++++++
+  Parameters: {"utf8"=>"✓", "complete_booking"=>{"rto"=>"0", "rtr"=>"0", "rt"=>"{\"onward_sector\":{\"flt\":[{\"segs\":{\"seg\":[{\"flt_num\":\"G8 532\",\"dept_datetime\":\"2017-10-31T06:25:00.000Z\",\"arr_datetime\":\"2017-10-31T09:10:00.000Z\",\"origin\":\"AMD\",\"dest\":\"CCU\",\"stops\":\"0\",\"via\":null,\"aircraft\":\"320\",\"dept_term\":\"1\",\"arr_term\":\"2\",\"dur\":null,\"bag_alw\":\"15K\"}]}}]},\"return_sector\":{\"flt\":[{\"segs\":{\"seg\":[{\"flt_num\":\"G8 537\",\"dept_datetime\":\"2017-11-10T16:45:00.000Z\",\"arr_datetime\":\"2017-11-10T19:25:00.000Z\",\"origin\":\"CCU\",\"dest\":\"AMD\",\"stops\":\"0\",\"via\":null,\"aircraft\":\"320\",\"dept_term\":\"2\",\"arr_term\":\"1\",\"dur\":null,\"bag_alw\":\"15K\"}]}}]},\"fares\":{\"fare\":{\"vdr_sup_rel_id\":\"9\",\"base\":11629.0,\"charge_yr\":100.0,\"charge_yq\":600.0,\"charge_psf\":398.0,\"charge_udf\":643.0,\"charge_xx\":100.0,\"charge_k3\":309.0,\"charge_sst\":309.0,\"fb_code\":\"0~A~~G8~AMDCCUA~100N~~0~1~~X^0~A~~G8~AO9RBINX~0001~~0~5~~X\",\"fare_cls\":\"A:GS^A:GS\"}},\"call_id\":\"SIM_1234567890\",\"pax\":{\"adt\":\"1\",\"chd\":\"0\",\"inf\":\"0\"},\"status\":\"success\",\"remark\":\"\"}"}, "commit"=>"Book Now"}
+
+
+++++++++++++++ REQUEST TKRT+++++++++++++
+<flights_ticket_rq>
+  <call_id>SIM_1234567890</call_id>
+  <bkg_ngn_360_api_user>
+    <user_id>otaapi</user_id>
+    <password>Goair@@018</password>
+    <is_pw_encr>no</is_pw_encr>
+  </bkg_ngn_360_api_user>
+  <pax>
+    <adt>1</adt>
+    <chd>0</chd>
+    <inf>0</inf>
+  </pax>
+  <pax_details>
+    <pax>
+      <pax_type>ADT</pax_type>
+      <first_name>Venkat</first_name>
+      <middle_name>Rao</middle_name>
+      <last_name>M</last_name>
+      <dob>1988-12-20 00:00</dob>
+      <phone_number>1234567890</phone_number>
+      <email>venkateswara.rao@irissbsp.com</email>
+      <gender>M</gender>
+      <title>MR</title>
+    </pax>
+  </pax_details>
+  <ticket_action>hold/ticket</ticket_action>
+  <onward_sector>
+    <segs>
+      <seg>
+        <flt_num>G8 532</flt_num>
+        <dept_datetime>2017-10-31T06:25:00.000Z</dept_datetime>
+        <arr_datetime>2017-10-31T09:10:00.000Z</arr_datetime>
+        <origin>AMD</origin>
+        <dest>CCU</dest>
+        <stops>0</stops>
+        <via/>
+        <aircraft>320</aircraft>
+        <dept_term>1</dept_term>
+        <arr_term>2</arr_term>
+        <dur/>
+        <bag_alw>15K</bag_alw>
+      </seg>
+    </segs>
+  </onward_sector>
+  <return_sector>
+    <segs>
+      <seg>
+        <flt_num>G8 537</flt_num>
+        <dept_datetime>2017-11-10T16:45:00.000Z</dept_datetime>
+        <arr_datetime>2017-11-10T19:25:00.000Z</arr_datetime>
+        <origin>CCU</origin>
+        <dest>AMD</dest>
+        <stops>0</stops>
+        <via/>
+        <aircraft>320</aircraft>
+        <dept_term>2</dept_term>
+        <arr_term>1</arr_term>
+        <dur/>
+        <bag_alw>15K</bag_alw>
+      </seg>
+    </segs>
+  </return_sector>
+  <fares>
+    <fare>
+      <vdr_sup_rel_id>9</vdr_sup_rel_id>
+      <base>11629.0</base>
+      <charge_yq>600.0</charge_yq>
+      <charge_yr>100.0</charge_yr>
+      <charge_psf>398.0</charge_psf>
+      <charge_udf>643.0</charge_udf>
+      <charge_k3>309.0</charge_k3>
+      <charge_jn/>
+      <charge_ot/>
+      <charge_sbc/>
+      <charge_kkc/>
+      <charge_xx>100.0</charge_xx>
+      <charge_sst>309.0</charge_sst>
+      <cabin_cls/>
+      <cabin_cls_name/>
+      <fb_code>0~A~~G8~AMDCCUA~100N~~0~1~~X^0~A~~G8~AO9RBINX~0001~~0~5~~X</fb_code>
+      <fare_cls>A:GS^A:GS</fare_cls>
+      <seats/>
+    </fare>
+  </fares>
+</flights_ticket_rq>
+++++++++++++++ RESPONSE +++++++++++++
+{"flights_ticket_rs":{"call_id":"SIM_1234567890","pax":{"adt":"1","chd":"0","inf":"0"},"pax_details":{"pax":[{"pax_type":"ADT","first_name":"Venkat","middle_name":"Rao","last_name":"M","dob":"1988-12-20 00:00","phone_number":"1234567890","email":"venkateswara.rao@irissbsp.com","gender":"M","title":"MR"}],"airline_pnr":"S79LTZ"},"status":"success","remark":""}}

@@ -1,0 +1,41 @@
+{"flights_price_rs": {
+   "sector_price": [   {
+      "onward_sector": [{"segs": {"seg": [      {
+         "flt_num": "G8 422",
+         "dept_datetime": "2017-12-20T19:55:00.000Z",
+         "arr_datetime": "2017-12-20T22:05:00.000Z",
+         "origin": "DEL",
+         "dest": "HYD",
+         "stops": "0",
+         "via": null,
+         "aircraft": "320",
+         "dept_term": "1D",
+         "arr_term": null,
+         "dur": null,
+         "bag_alw": "15K"
+      }]}}],
+      "return_sector": [],
+      "fares": {"fare":       {
+         "base": 10000,
+         "charge_yr": 50,
+         "charge_yq": 300,
+         "charge_psf": 150,
+         "charge_udf": 564,
+         "charge_cst": 259,
+         "charge_sst": 259
+      }}
+   }],
+   "call_id": "SIM_1234567890",
+   "pax":    {
+      "adt": "1",
+      "chd": "0",
+      "inf": "0"
+   },
+   "status": "success",
+   "remark": ""
+}}
+
+
+xml:
+
+<root><flights_price_rs><sector_price><onward_sector><segs><seg><flt_num>G8 422</flt_num><dept_datetime>2017-12-20T19:55:00Z</dept_datetime><arr_datetime>2017-12-20T22:05:00Z</arr_datetime><origin>DEL</origin><dest>HYD</dest><stops>0</stops><via /><aircraft>320</aircraft><dept_term>1D</dept_term><arr_term /><dur /><bag_alw>15K</bag_alw></seg></segs></onward_sector><fares><fare><base>10000</base><charge_yr>50</charge_yr><charge_yq>300</charge_yq><charge_psf>150</charge_psf><charge_udf>564</charge_udf><charge_cst>259</charge_cst><charge_sst>259</charge_sst></fare></fares></sector_price><call_id>SIM_1234567890</call_id><pax><adt>1</adt><chd>0</chd><inf>0</inf></pax><status>success</status><remark></remark></flights_price_rs></root>
